@@ -1,0 +1,290 @@
+/* ---------------------------------------------------------------
+   Estilos globales: tokens, base y primitivas compartidas.
+   Los estilos específicos de cada sección viven en su componente.
+   --------------------------------------------------------------- */
+
+:root {
+  --cream: #f7f3ec;
+  --white: #ffffff;
+  --ink: #1b2233;
+  --muted: #565d6d;
+  --line: #e4dccb;
+  --line-soft: #f1e9d8;
+  --accent: #a34a25;
+  --accent-dark: #7e3719;
+  --gold: #b8800a;
+  --gold-light: #f2b93b;
+  --on-dark: #c9cfdc;
+  --whatsapp: #25d366;
+  --whatsapp-ink: #0b1f17;
+
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+
+  --shell: 1200px;
+  --gutter: clamp(20px, 5vw, 80px);
+  --section-y: clamp(56px, 8vw, 72px);
+
+  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+section[id] {
+  scroll-margin-top: 24px;
+}
+
+/* --- Layout ---------------------------------------------------- */
+
+.shell {
+  width: 100%;
+  max-width: var(--shell);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--section-y);
+}
+
+.section--white {
+  background: var(--white);
+}
+
+.section--ink {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.section-head {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.section--ink .eyebrow {
+  color: var(--gold-light);
+}
+
+.section-title {
+  font-size: clamp(28px, 4vw, 38px);
+}
+
+.lead {
+  font-size: clamp(16px, 2vw, 18px);
+  color: var(--muted);
+}
+
+.section--ink .lead {
+  color: var(--on-dark);
+}
+
+/* --- Botones --------------------------------------------------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 12px 22px;
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.btn--primary:hover {
+  background: var(--accent-dark);
+  color: var(--white);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.btn--outline:hover {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.btn--whatsapp {
+  background: var(--whatsapp);
+  color: var(--whatsapp-ink);
+}
+
+.btn--whatsapp:hover {
+  background: #1fbe5b;
+  color: var(--whatsapp-ink);
+}
+
+.btn--sm {
+  min-height: 44px;
+  padding: 10px 18px;
+  font-size: 15px;
+}
+
+.btn--block {
+  width: 100%;
+}
+
+/* --- Tarjetas y piezas ----------------------------------------- */
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: clamp(22px, 3vw, 28px);
+}
+
+.section--white .card {
+  background: var(--cream);
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--white);
+  border: 1px solid #d7cfbe;
+  white-space: nowrap;
+}
+
+.stars {
+  color: var(--gold);
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.stars--dark {
+  color: var(--gold-light);
+}
+
+.stars--lg {
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.feature-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 15px;
+}
+
+.feature-list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.feature-list app-icon {
+  color: #2e6f73;
+  margin-top: 2px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

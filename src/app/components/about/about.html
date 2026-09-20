@@ -1,0 +1,19 @@
+<section class="section section--white" id="sobre-mi">
+  <div class="shell about">
+    <div class="about__text">
+      <p class="eyebrow">Sobre mí</p>
+      <h2 class="section-title">Hola, soy {{ site.name.split(' ')[0] }}</h2>
+      <p class="about__paragraph">{{ site.about.intro }}</p>
+      <p class="about__paragraph">{{ site.about.body }}</p>
+    </div>
+
+    <dl class="about__facts">
+      @for (fact of site.facts; track fact.label) {
+        <div class="about__fact">
+          <dt>{{ fact.label }}</dt>
+          <dd>{{ fact.value }}</dd>
+        </div>
+      }
+    </dl>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+<section class="section">
+  <div class="shell hero">
+    <div class="hero__text">
+      <p class="eyebrow">{{ site.hero.eyebrow }}</p>
+      <h1 class="hero__title">{{ site.hero.title }}</h1>
+      <p class="lead hero__subtitle">{{ site.hero.subtitle }}</p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" [href]="site.whatsappUrl" target="_blank" rel="noopener">
+          <app-icon name="whatsapp" />
+          Escríbeme por WhatsApp
+        </a>
+        <a class="btn btn--outline" href="#opiniones">Ver opiniones</a>
+      </div>
+
+      <div class="hero__proof">
+        <span class="hero__rating">
+          <span class="stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+          <strong>{{ site.google.rating }} en Google</strong>
+          <span class="hero__muted">· {{ site.google.reviewCount }} reseñas</span>
+        </span>
+        <span class="hero__muted">Primera clase de prueba sin compromiso</span>
+      </div>
+    </div>
+
+    <div class="hero__aside">
+      @if (site.photoUrl) {
+        <img class="hero__photo" [src]="site.photoUrl" [alt]="'Foto de ' + site.name" />
+      } @else {
+        <div class="hero__photo hero__photo--empty">
+          <app-icon name="user" [size]="96" />
+          <span>Foto de Cristian (sustituir)</span>
+        </div>
+      }
+
+      <div class="hero__credential">
+        <span class="hero__credential-icon"><app-icon name="cap" [size]="22" /></span>
+        <span class="hero__credential-text">
+          <strong>{{ site.hero.credentialTitle }}</strong>
+          <span class="hero__muted">{{ site.hero.credentialSubtitle }}</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>

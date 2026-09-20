@@ -1,0 +1,55 @@
+<section class="section section--ink" id="contacto">
+  <div class="shell contact">
+    <div class="contact__text">
+      <p class="eyebrow">Contacto</p>
+      <h2 class="contact__title">¿Hablamos?</h2>
+      <p class="lead contact__lead">
+        Cuéntame el curso, la asignatura y qué necesitas. Te respondo el mismo día y buscamos hueco
+        para una primera clase de prueba.
+      </p>
+
+      <div class="contact__actions">
+        <a class="btn btn--whatsapp" [href]="site.whatsappUrl" target="_blank" rel="noopener">
+          <app-icon name="whatsapp" />
+          Escríbeme por WhatsApp
+        </a>
+        <p class="contact__phone">
+          o llámame al <a [href]="site.phoneHref">{{ site.phoneDisplay }}</a>
+        </p>
+      </div>
+    </div>
+
+    <ul class="contact__list">
+      <li class="contact__item">
+        <app-icon name="mail" [size]="22" />
+        <span class="contact__item-text">
+          <span class="contact__label">Email</span>
+          <a [href]="site.emailHref">{{ site.email }}</a>
+        </span>
+      </li>
+      <li class="contact__item">
+        <app-icon name="pin" [size]="22" />
+        <span class="contact__item-text">
+          <span class="contact__label">Zona</span>
+          <strong>{{ site.city }} · {{ site.area }} · también online</strong>
+        </span>
+      </li>
+      <li class="contact__item">
+        <app-icon name="clock" [size]="22" />
+        <span class="contact__item-text">
+          <span class="contact__label">Horario</span>
+          <strong>{{ site.scheduleLong }}</strong>
+        </span>
+      </li>
+      <li class="contact__item">
+        <app-icon name="star" [size]="22" />
+        <span class="contact__item-text">
+          <span class="contact__label">Reseñas</span>
+          <a [href]="site.google.profileUrl" target="_blank" rel="noopener">
+            {{ site.google.rating }} ★ en Google · ver perfil
+          </a>
+        </span>
+      </li>
+    </ul>
+  </div>
+</section>

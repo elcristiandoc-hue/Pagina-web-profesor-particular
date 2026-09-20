@@ -1,0 +1,101 @@
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: clamp(24px, 3vw, 32px);
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.plan--featured {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--white);
+}
+
+.plan__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.plan__name {
+  font-family: var(--font-body);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.plan__badge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--gold-light);
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.plan__price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.plan__amount {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.plan--featured .plan__amount {
+  color: var(--gold-light);
+}
+
+.plan__unit {
+  color: var(--muted);
+}
+
+.plan__description {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.plan--featured .plan__unit,
+.plan--featured .plan__description {
+  color: var(--on-dark);
+}
+
+.plan--featured .feature-list app-icon {
+  color: var(--gold-light);
+}
+
+.plan__cta {
+  margin-top: auto;
+}
+
+.plan--featured .plan__cta.btn--primary {
+  background: var(--gold-light);
+  color: var(--ink);
+}
+
+.plan--featured .plan__cta.btn--primary:hover {
+  background: #e0a824;
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .plans {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

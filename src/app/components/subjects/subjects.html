@@ -1,0 +1,27 @@
+<section class="section section--white" id="asignaturas">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Asignaturas</p>
+      <h2 class="section-title">Qué puedo ayudarte a aprobar</h2>
+      <p class="lead">
+        Refuerzo durante el curso, recuperaciones y preparación de exámenes. Siempre con el temario y
+        el ritmo de tu centro.
+      </p>
+    </div>
+
+    <div class="subjects">
+      @for (subject of site.subjects; track subject.title) {
+        <article class="card subject">
+          <span class="subject__icon"><app-icon [name]="subject.icon" [size]="22" /></span>
+          <h3 class="subject__title">{{ subject.title }}</h3>
+          <p class="subject__text">{{ subject.description }}</p>
+          <div class="subject__levels">
+            @for (level of subject.levels; track level) {
+              <span class="tag">{{ level }}</span>
+            }
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

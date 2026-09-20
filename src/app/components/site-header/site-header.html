@@ -1,0 +1,21 @@
+<header class="header">
+  <div class="shell header__inner">
+    <a class="header__brand" href="#contenido">{{ site.name }}</a>
+
+    <nav class="header__nav" aria-label="Secciones">
+      @for (link of site.nav; track link.href) {
+        <a [href]="link.href">{{ link.label }}</a>
+      }
+    </nav>
+
+    <a
+      class="btn btn--primary btn--sm header__cta"
+      [href]="site.whatsappUrl"
+      target="_blank"
+      rel="noopener"
+    >
+      <app-icon name="whatsapp" [size]="18" />
+      WhatsApp
+    </a>
+  </div>
+</header>

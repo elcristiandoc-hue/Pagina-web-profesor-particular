@@ -1,0 +1,38 @@
+.footer {
+  background: var(--ink);
+  color: var(--on-dark);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-block: 28px;
+  font-size: 14px;
+}
+
+/* Hueco para que el botón flotante no tape los enlaces legales. */
+@media (max-width: 720px) {
+  .footer__inner {
+    padding-bottom: 96px;
+  }
+}
+
+.footer__legal {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer__legal a {
+  color: var(--on-dark);
+  text-decoration: none;
+}
+
+.footer__legal a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}

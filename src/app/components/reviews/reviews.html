@@ -1,0 +1,49 @@
+<section class="section" id="opiniones">
+  <div class="shell">
+    <div class="reviews__head">
+      <div class="section-head reviews__intro">
+        <p class="eyebrow">Opiniones</p>
+        <h2 class="section-title">Familias y alumnos que ya lo han probado</h2>
+      </div>
+
+      <a
+        class="btn btn--outline btn--sm reviews__all"
+        [href]="site.google.profileUrl"
+        target="_blank"
+        rel="noopener"
+      >
+        Ver todas en Google
+      </a>
+    </div>
+
+    <div class="reviews">
+      <div class="reviews__score">
+        <p class="reviews__rating">{{ site.google.rating }}</p>
+        <p class="stars stars--dark stars--lg" role="img" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p class="reviews__meta">
+          Valoración media en Google<br />
+          {{ site.google.reviewCount }} reseñas verificadas
+        </p>
+        <a
+          class="reviews__write"
+          [href]="site.google.writeReviewUrl"
+          target="_blank"
+          rel="noopener"
+        >
+          Dejar una reseña →
+        </a>
+      </div>
+
+      @for (review of site.reviews; track review.quote) {
+        <article class="card review">
+          <p class="stars" role="img" aria-label="5 de 5 estrellas">★★★★★</p>
+          <blockquote class="review__quote">«{{ review.quote }}»</blockquote>
+          <p class="review__author">
+            <strong>{{ review.author }}</strong>
+            <span>&ngsp;· {{ review.role }}</span>
+          </p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

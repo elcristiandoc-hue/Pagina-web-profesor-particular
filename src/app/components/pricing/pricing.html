@@ -1,0 +1,49 @@
+<section class="section section--white" id="precios">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Precios</p>
+      <h2 class="section-title">{{ site.pricing.title }}</h2>
+      <p class="lead">{{ site.pricing.subtitle }}</p>
+    </div>
+
+    <div class="plans">
+      @for (plan of site.pricing.plans; track plan.name) {
+        <article class="plan" [class.plan--featured]="plan.featured">
+          <div class="plan__head">
+            <h3 class="plan__name">{{ plan.name }}</h3>
+            @if (plan.badge) {
+              <span class="plan__badge">{{ plan.badge }}</span>
+            }
+          </div>
+
+          <p class="plan__price">
+            <span class="plan__amount">{{ plan.price }}</span>
+            <span class="plan__unit">{{ plan.unit }}</span>
+          </p>
+
+          <p class="plan__description">{{ plan.description }}</p>
+
+          <ul class="feature-list">
+            @for (feature of plan.features; track feature) {
+              <li>
+                <app-icon name="check" [size]="18" />
+                {{ feature }}
+              </li>
+            }
+          </ul>
+
+          <a
+            class="btn btn--block plan__cta"
+            [class.btn--primary]="plan.featured"
+            [class.btn--outline]="!plan.featured"
+            [href]="site.whatsappUrl"
+            target="_blank"
+            rel="noopener"
+          >
+            {{ plan.cta }}
+          </a>
+        </article>
+      }
+    </div>
+  </div>
+</section>

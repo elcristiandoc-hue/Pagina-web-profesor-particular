@@ -1,0 +1,22 @@
+<section class="section" id="metodo">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Cómo trabajo</p>
+      <h2 class="section-title">Un plan claro desde la primera clase</h2>
+      <p class="lead">
+        Nada de ir a remolque de los deberes: cada alumno tiene un objetivo, un ritmo y un
+        seguimiento.
+      </p>
+    </div>
+
+    <div class="steps">
+      @for (item of site.method; track item.step) {
+        <div class="card step">
+          <span class="step__number">{{ item.step }}</span>
+          <h3 class="step__title">{{ item.title }}</h3>
+          <p class="step__text">{{ item.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
