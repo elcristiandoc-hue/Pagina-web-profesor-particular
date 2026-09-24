@@ -22,7 +22,6 @@ perfil de Google, asignaturas, método, reseñas y precios.
 
 Lo que hay entre `[corchetes]` está pendiente de confirmar. Antes de publicar:
 
-- [ ] Teléfono real (`WHATSAPP_NUMBER`, `phoneDisplay`, `phoneHref`)
 - [ ] Email real
 - [ ] Horario real (ahora es una suposición)
 - [ ] Foto: dejar el fichero en `public/` y poner la ruta en `photoUrl`

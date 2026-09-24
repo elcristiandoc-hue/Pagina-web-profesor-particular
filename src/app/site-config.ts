@@ -2,7 +2,7 @@
  * Datos editables del sitio. Los valores entre [corchetes] están pendientes de confirmar.
  */
 
-const WHATSAPP_NUMBER = '34600000000';
+const WHATSAPP_NUMBER = '34618848828';
 const WHATSAPP_MESSAGE = 'Hola Cristian, me gustaría informarme sobre las clases particulares.';
 
 export interface Subject {
@@ -53,8 +53,8 @@ export const SITE = {
   name: 'Cristian Ortega',
   role: 'Profesor particular de Matemáticas, Física y Química',
   area: 'Alicante',
-  phoneDisplay: '+34 [600 000 000]',
-  phoneHref: 'tel:+34600000000',
+  phoneDisplay: '+34 618 84 88 28',
+  phoneHref: 'tel:+34618848828',
   email: '[hola@cristianortega.es]',
   emailHref: 'mailto:hola@cristianortega.es',
   whatsappUrl: `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`,
