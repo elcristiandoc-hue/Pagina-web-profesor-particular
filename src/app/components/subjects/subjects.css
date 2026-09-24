@@ -38,6 +38,29 @@
   margin-top: auto;
 }
 
+/* La universidad se destaca: es donde menos competencia hay. */
+.section--white .subject--featured {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--white);
+}
+
+.subject--featured .subject__icon {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: var(--gold-light);
+}
+
+.subject--featured .subject__text {
+  color: var(--on-dark);
+}
+
+.subject--featured .tag {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.24);
+  color: var(--white);
+}
+
 @media (max-width: 1040px) {
   .subjects {
     grid-template-columns: repeat(2, minmax(0, 1fr));

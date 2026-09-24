@@ -8,7 +8,7 @@
     <title>Cristian Ortega · Clases particulares de Matemáticas, Física y Química</title>
     <meta
       name="description"
-      content="Clases particulares de Matemáticas, Física y Química desde 4º de ESO hasta primeros cursos de universidad. Presenciales u online. Entrevista inicial gratuita."
+      content="Clases particulares online de Matemáticas, Física y Química para toda España, desde 4º de ESO hasta primeros cursos de universidad. Entrevista inicial gratuita."
     />
     <meta name="theme-color" content="#f7f3ec" />
     <link rel="canonical" href="https://[tu-dominio].es/" />
@@ -21,7 +21,7 @@
     />
     <meta
       property="og:description"
-      content="Desde 4º de ESO hasta primeros cursos de universidad. Presenciales u online. Entrevista inicial gratuita."
+      content="Clases online para toda España, desde 4º de ESO hasta primeros cursos de universidad. Entrevista inicial gratuita."
     />
     <meta property="og:url" content="https://[tu-dominio].es/" />
 
@@ -36,22 +36,53 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "@id": "https://[tu-dominio].es/#profesor",
-        "name": "Cristian Ortega · Clases particulares",
-        "description": "Clases particulares de Matemáticas, Física y Química desde 4º de ESO hasta primeros cursos de universidad, presenciales u online.",
+        "@type": "Service",
+        "@id": "https://[tu-dominio].es/#clases",
+        "serviceType": "Clases particulares de Matemáticas, Física y Química",
+        "description": "Clases particulares online de Matemáticas, Física y Química desde 4º de ESO hasta primeros cursos de universidad.",
         "url": "https://[tu-dominio].es/",
-        "telephone": "+34600000000",
-        "email": "hola@cristianortega.es",
-        "priceRange": "10 € - 20 €",
-        "areaServed": "[Ciudad]",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "[Ciudad]",
-          "addressCountry": "ES"
+        "provider": {
+          "@type": "Person",
+          "name": "Cristian Ortega Martínez",
+          "jobTitle": "Profesor particular de Matemáticas, Física y Química",
+          "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad de Alicante" },
+          "telephone": "+34600000000",
+          "email": "hola@cristianortega.es",
+          "sameAs": ["https://buscatuprofesor.es/user-57163/"]
         },
-        "openingHours": "Mo-Fr 16:00-21:00",
-        "sameAs": ["https://g.page/[perfil-google]"]
+        "areaServed": { "@type": "Country", "name": "España" },
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceLocation": { "@type": "VirtualLocation", "name": "Videollamada" }
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Clases individuales",
+            "price": "15",
+            "priceCurrency": "EUR",
+            "description": "Por hora, de 4º de ESO a 2º de Bachillerato"
+          },
+          {
+            "@type": "Offer",
+            "name": "Grupo reducido",
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "10",
+              "maxPrice": "12",
+              "priceCurrency": "EUR"
+            },
+            "description": "Por hora y alumno, grupos de 2 a 5"
+          },
+          {
+            "@type": "Offer",
+            "name": "Universidad",
+            "price": "20",
+            "priceCurrency": "EUR",
+            "description": "Por hora, troncales de ciencias de primeros cursos"
+          }
+        ]
       }
     </script>
   </head>

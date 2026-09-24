@@ -81,6 +81,11 @@
   color: var(--on-dark);
 }
 
+.contact__note {
+  font-size: 13px;
+  color: var(--on-dark);
+}
+
 @media (max-width: 860px) {
   .contact {
     grid-template-columns: minmax(0, 1fr);

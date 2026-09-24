@@ -1,0 +1,36 @@
+<section class="section section--ink" id="online">
+  <div class="shell online">
+    <div class="online__text">
+      <p class="eyebrow">Clases online</p>
+      <h2 class="online__title">{{ site.online.title }}</h2>
+      <p class="lead">{{ site.online.lead }}</p>
+      <p class="online__note">{{ site.online.note }}</p>
+    </div>
+
+    <div class="online__boxes">
+      <div class="online__box">
+        <h3 class="online__box-title">Lo imprescindible</h3>
+        <ul class="online__list">
+          @for (item of site.online.essentials; track item) {
+            <li>
+              <app-icon name="check" [size]="18" />
+              {{ item }}
+            </li>
+          }
+        </ul>
+      </div>
+
+      <div class="online__box">
+        <h3 class="online__box-title">Lo que ayuda, pero no hace falta</h3>
+        <ul class="online__list online__list--soft">
+          @for (item of site.online.helpful; track item) {
+            <li>
+              <app-icon name="check" [size]="18" />
+              {{ item }}
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

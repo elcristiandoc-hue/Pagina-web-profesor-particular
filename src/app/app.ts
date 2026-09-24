@@ -3,6 +3,7 @@ import { About } from './components/about/about';
 import { Contact } from './components/contact/contact';
 import { Hero } from './components/hero/hero';
 import { Method } from './components/method/method';
+import { Online } from './components/online/online';
 import { Pricing } from './components/pricing/pricing';
 import { Reviews } from './components/reviews/reviews';
 import { SiteFooter } from './components/site-footer/site-footer';
@@ -18,6 +19,7 @@ import { WhatsappFab } from './components/whatsapp-fab/whatsapp-fab';
     Hero,
     Subjects,
     Method,
+    Online,
     About,
     Reviews,
     Pricing,

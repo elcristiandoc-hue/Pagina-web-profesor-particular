@@ -25,15 +25,22 @@ Lo que hay entre `[corchetes]` está pendiente de confirmar. Antes de publicar:
 - [ ] Teléfono real (`WHATSAPP_NUMBER`, `phoneDisplay`, `phoneHref`)
 - [ ] Email real
 - [ ] Horario real (ahora es una suposición)
-- [ ] Tamaño de los grupos reducidos (ahora pone `[2 a 4]`)
 - [ ] Foto: dejar el fichero en `public/` y poner la ruta en `photoUrl`
 - [ ] `src/index.html`: dominio real en `canonical`, `og:url` y JSON-LD
 - [ ] Páginas de aviso legal, privacidad y cookies (hoy son enlaces vacíos en el pie)
 
 Ya confirmado: titulación (Licenciado en Químicas, Universidad de Alicante),
-experiencia (más de 5 años), zona (San Vicente del Raspeig, Alicante), niveles
-(desde 4º de ESO hasta universidad), precios (15 €/h individual, 10–12 €/h grupo,
-20 €/h universidad) y la entrevista inicial gratuita.
+experiencia (9 años, más de 50 alumnos), niveles (desde 4º de ESO hasta
+universidad), precios (15 €/h individual, 10–12 €/h en grupos de 2 a 5, 20 €/h
+universidad) y la entrevista inicial gratuita.
+
+## El sitio es online primero
+
+Cristian da clase por videollamada a alumnos de toda España; lo presencial es la
+excepción y solo en la zona de Alicante. Por eso la web **no** se vende como
+negocio local: no hay ciudad en el titular ni dirección postal, y el JSON-LD es un
+`Service` con `areaServed` España, no un `LocalBusiness`. Si algún día cambia el
+enfoque, ese es el primer sitio que tocar.
 
 ## Las reseñas
 

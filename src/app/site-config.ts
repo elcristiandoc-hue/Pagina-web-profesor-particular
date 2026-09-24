@@ -10,6 +10,7 @@ export interface Subject {
   title: string;
   description: string;
   levels: string[];
+  featured: boolean;
 }
 
 export interface MethodStep {
@@ -51,7 +52,6 @@ export interface NavLink {
 export const SITE = {
   name: 'Cristian Ortega',
   role: 'Profesor particular de Matemáticas, Física y Química',
-  city: 'San Vicente del Raspeig',
   area: 'Alicante',
   phoneDisplay: '+34 [600 000 000]',
   phoneHref: 'tel:+34600000000',
@@ -73,24 +73,25 @@ export const SITE = {
   nav: [
     { href: '#asignaturas', label: 'Asignaturas' },
     { href: '#metodo', label: 'Método' },
+    { href: '#online', label: 'Clases online' },
     { href: '#opiniones', label: 'Opiniones' },
     { href: '#precios', label: 'Precios' },
     { href: '#contacto', label: 'Contacto' },
   ] as NavLink[],
 
   hero: {
-    eyebrow: 'Clases particulares, presenciales u online',
-    title: 'Matemáticas, Física y Química explicadas para que, por fin, se entiendan.',
+    eyebrow: 'Clases particulares online · toda España',
+    title: 'Matemáticas, Física y Química explicadas hasta que se entienden.',
     subtitle:
-      'Clases particulares desde 4º de ESO hasta primeros cursos de universidad. En persona o por videollamada, con un plan a medida y seguimiento entre clase y clase.',
+      'Desde 4º de ESO hasta los primeros cursos de universidad. Clases por videollamada, con un plan a medida y seguimiento entre clase y clase.',
     proof: 'Entrevista inicial gratuita, sin compromiso',
     credentialTitle: 'Licenciado en Químicas · Universidad de Alicante',
-    credentialSubtitle: '4º ESO, Bachillerato, EBAU y universidad',
+    credentialSubtitle: '9 años dando clases · más de 50 alumnos',
   },
 
   about: {
     intro:
-      'Soy Licenciado en Químicas por la Universidad de Alicante y llevo más de cinco años dando clases particulares de ciencias a alumnos de 4º de ESO, Bachillerato y primeros cursos de carrera.',
+      'Soy Licenciado en Químicas por la Universidad de Alicante y llevo nueve años dando clases particulares de ciencias. Por mis clases han pasado más de cincuenta alumnos, desde 4º de ESO hasta primeros cursos de carrera.',
     body: 'Me gusta explicar con calma y sin dar nada por sabido: primero entender, luego practicar. Muchos alumnos llegan con miedo a la asignatura y terminan el curso con confianza (y con mejor nota).',
     quote: 'Quitar un par de puntos débiles es la diferencia entre suspender y aprobar.',
   },
@@ -102,6 +103,7 @@ export const SITE = {
       description:
         'De 4º de ESO a 2º de Bachillerato (Ciencias y Ciencias Sociales). Álgebra, funciones, derivadas, integrales, probabilidad y estadística.',
       levels: ['4º ESO', 'Bachillerato'],
+      featured: false,
     },
     {
       icon: 'atom',
@@ -109,6 +111,7 @@ export const SITE = {
       description:
         'Cinemática, dinámica, energía, campos y ondas. Mucha práctica con problemas tipo examen, paso a paso.',
       levels: ['4º ESO', 'Bachillerato'],
+      featured: false,
     },
     {
       icon: 'flask',
@@ -116,6 +119,7 @@ export const SITE = {
       description:
         'Formulación, estequiometría, equilibrio, ácido-base, redox y orgánica. Con método para no perderse en los cálculos.',
       levels: ['4º ESO', 'Bachillerato'],
+      featured: false,
     },
     {
       icon: 'cap',
@@ -123,13 +127,15 @@ export const SITE = {
       description:
         'Repaso por bloques, exámenes de convocatorias anteriores cronometrados y estrategia para el día de la prueba.',
       levels: ['2º Bachillerato', 'Intensivo'],
+      featured: false,
     },
     {
       icon: 'university',
       title: 'Universidad',
       description:
-        'Muchas carreras arrancan con asignaturas troncales de Matemáticas, Física y Química, y son las que más gente arrastra de primero. Refuerzo para aprobarlas y no llevarlas colgando todo el grado.',
+        'Muchas carreras arrancan con troncales de Matemáticas, Física y Química, y son las que más gente arrastra de primero. La mayoría de profesores particulares se quedan en Bachillerato: aquí seguimos.',
       levels: ['Primeros cursos', 'Grados científico-técnicos'],
+      featured: true,
     },
   ] as Subject[],
 
@@ -144,7 +150,7 @@ export const SITE = {
       step: '02',
       title: 'Plan a medida',
       description:
-        'Ajusto las clases al temario y al ritmo de tu instituto o tu facultad. Ejercicios escogidos, resúmenes y trucos que funcionan en el examen.',
+        'Ajusto las clases a tu temario y al ritmo de tus clases. Ejercicios escogidos, resúmenes y trucos que funcionan en el examen.',
     },
     {
       step: '03',
@@ -154,11 +160,19 @@ export const SITE = {
     },
   ] as MethodStep[],
 
+  online: {
+    title: 'Clases online, sin complicaciones',
+    lead: 'Doy clase por videollamada a alumnos de toda España. No hace falta montar nada especial: con lo que ya tienes en casa suele bastar.',
+    essentials: ['Conexión a internet estable', 'Un micrófono'],
+    helpful: ['Cámara', 'Tus apuntes y ejercicios', 'Bizum o transferencia para pagar'],
+    note: 'Todo lo demás se adapta a cada alumno y lo concretamos en la entrevista inicial: horarios, material y forma de pago. Si vives cerca de Alicante y prefieres clases presenciales, pregúntame por disponibilidad.',
+  },
+
   facts: [
     { label: 'Formación', value: 'Licenciado en Químicas · Universidad de Alicante' },
-    { label: 'Experiencia', value: 'Más de 5 años dando clases particulares' },
+    { label: 'Experiencia', value: '9 años · más de 50 alumnos' },
     { label: 'Niveles', value: 'Desde 4º de ESO hasta universidad' },
-    { label: 'Modalidad', value: 'Presenciales u online' },
+    { label: 'Modalidad', value: 'Online, para toda España' },
     { label: 'Horario', value: 'Lunes a viernes, 16:00–21:00' },
   ] as Fact[],
 
@@ -227,7 +241,7 @@ export const SITE = {
         price: '15 €',
         unit: '/ hora',
         description: 'Alumnos de 4º de ESO a 2º de Bachillerato.',
-        features: ['Clase de 60 minutos', 'Presencial u online', 'Material y ejercicios incluidos'],
+        features: ['Clase de 60 minutos', 'Por videollamada', 'Material y ejercicios incluidos'],
         cta: 'Reservar',
         featured: true,
         badge: 'Más habitual',
@@ -238,9 +252,9 @@ export const SITE = {
         unit: '/ hora y alumno',
         description: 'Compañeros de clase con el mismo curso y asignatura.',
         features: [
+          'Grupos de 2 a 5 alumnos',
           'Entre 10 € y 12 € por alumno, según cuántos seáis',
           'Mismo curso y misma asignatura',
-          'Grupos de [2 a 4] alumnos',
         ],
         cta: 'Consultar',
         featured: false,
@@ -250,8 +264,8 @@ export const SITE = {
         name: 'Universidad',
         price: '20 €',
         unit: '/ hora',
-        description: 'Asignaturas troncales de ciencias de los primeros cursos.',
-        features: ['Clase de 60 minutos', 'Presencial u online', 'Preparación de exámenes y prácticas'],
+        description: 'Troncales de ciencias de los primeros cursos de carrera.',
+        features: ['Clase de 60 minutos', 'Por videollamada', 'Preparación de exámenes y prácticas'],
         cta: 'Reservar',
         featured: false,
         badge: '',
