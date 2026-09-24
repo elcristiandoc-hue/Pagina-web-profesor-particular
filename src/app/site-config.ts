@@ -164,38 +164,55 @@ export const SITE = {
 
   reviews: [
     {
-      quote: 'Puedo recomendar profesor Martínez Cristian, es maestro excelente',
+      quote:
+        'Puedo recomendar profesor Martínez Cristian, es maestro excelente,saber enseñar muy bien. Mi hija está muy contenta.',
       author: 'Ruslana',
       context: 'Matemáticas · 2º de Bachillerato',
       date: 'abril de 2026',
       source: 'buscatuprofesor.es',
     },
     {
-      quote: 'Estamos muy contentos con Cristian, es muy buen profesor',
-      author: 'María de las Nieves',
+      quote: 'Estamos muy contentos con Cristian, es muy buen profesor.',
+      author: 'Maria de las Nieves',
       context: 'Física · 2º de Bachillerato',
       date: 'diciembre de 2025',
       source: 'buscatuprofesor.es',
     },
     {
-      quote: 'Las clases han sido satisfactorias y he obtenido buenos resultados',
+      quote: 'Las clases han sido satisfactorias y he obtenido buenos resultados.',
       author: 'Jeremy',
       context: 'Matemáticas · Estudios superiores',
       date: 'diciembre de 2025',
       source: 'buscatuprofesor.es',
     },
     {
-      quote: 'Muy amable y profesional. 100% recomendable',
+      quote: 'Muy amable y profesional. 100% recomendable.',
       author: 'Mayte',
       context: 'Matemáticas · 1º de Bachillerato',
       date: 'marzo de 2025',
       source: 'buscatuprofesor.es',
     },
     {
-      quote: 'Gracias a Christian y a la forma de que explica para que lo pillas',
+      quote:
+        'Fuaaaaa, Gracias a Christian y a la forma de que explica para que lo pillas y le des al coco he podido aprobar Física y no rendirme. Gracias',
       author: 'Deborah Alese',
       context: 'Física · 2º de Bachillerato',
       date: 'febrero de 2025',
+      source: 'buscatuprofesor.es',
+    },
+    {
+      quote: 'Desde que le da clase el profesor! Mi hijo aprendido más las matemáticas.',
+      author: 'MIRIAM',
+      context: 'Matemáticas · 2º de Bachillerato',
+      date: 'enero de 2025',
+      source: 'buscatuprofesor.es',
+    },
+    {
+      quote:
+        'Mi niña está encantada con su fluidez a la hora de expresarse, la positividad q transmite en la resolución de problemas y el conocimiento técnico q traduce a un lenguaje totalmente comprensible',
+      author: 'Raquel Barbadilla',
+      context: 'Matemáticas · 1º de Bachillerato',
+      date: 'enero de 2025',
       source: 'buscatuprofesor.es',
     },
   ] as Review[],
