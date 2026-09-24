@@ -66,10 +66,11 @@ src/app/
     icon/                     iconos SVG
 ```
 
-Hay dos accesos a WhatsApp y solo dos: el botón flotante (`position: fixed`, visible
+Accesos a WhatsApp: el de la cabecera, el botón flotante (`position: fixed`, visible
 durante todo el scroll — pastilla con texto en escritorio y círculo en móvil ≤720 px)
-y el de la sección de contacto. Los botones de los planes de precios llevan a
-`#contacto`, no abren WhatsApp directamente.
+y el de la sección de contacto. El hero no lleva ninguno a propósito: tenerlo ahí
+duplicaba al flotante en la primera pantalla. Los botones de los planes de precios
+llevan a `#contacto`, no abren WhatsApp directamente.
 
 ## Publicar
 
