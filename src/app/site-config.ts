@@ -47,7 +47,7 @@ export interface NavLink {
 
 export const SITE = {
   name: 'Cristian Ortega',
-  role: 'Profesor particular de Matemáticas y Física',
+  role: 'Profesor particular de Matemáticas, Física y Química',
   city: '[Ciudad]',
   area: '[barrio o zona]',
   phoneDisplay: '+34 [600 000 000]',
@@ -75,17 +75,18 @@ export const SITE = {
   ] as NavLink[],
 
   hero: {
-    eyebrow: 'Profesor particular · [Ciudad] y online',
-    title: 'Matemáticas y Física explicadas para que, por fin, se entiendan.',
+    eyebrow: 'Clases particulares, presenciales u online',
+    title: 'Matemáticas, Física y Química explicadas para que, por fin, se entiendan.',
     subtitle:
-      'Clases particulares para ESO, Bachillerato y EBAU. En persona en [Ciudad] o por videollamada, con un plan a medida y seguimiento entre clase y clase.',
-    credentialTitle: '[Grado en Matemáticas] · [X] años dando clases',
-    credentialSubtitle: 'ESO, Bachillerato y preparación de EBAU',
+      'Clases particulares desde 4º de ESO hasta primeros cursos de universidad. En persona o por videollamada, con un plan a medida y seguimiento entre clase y clase.',
+    proof: 'Entrevista inicial gratuita, sin compromiso',
+    credentialTitle: 'Licenciado en Químicas · Universidad de Alicante',
+    credentialSubtitle: '4º ESO, Bachillerato, EBAU y universidad',
   },
 
   about: {
     intro:
-      'Soy [Graduado en Matemáticas por la Universidad de …] y llevo [X] años dando clases particulares a alumnos de ESO y Bachillerato, en persona y online.',
+      'Soy Licenciado en Químicas por la Universidad de Alicante y llevo [X] años dando clases particulares de ciencias a alumnos de 4º de ESO, Bachillerato y primeros cursos de carrera.',
     body: 'Me gusta explicar con calma y sin dar nada por sabido: primero entender, luego practicar. Muchos alumnos llegan con miedo a la asignatura y terminan el curso con confianza (y con mejor nota).',
   },
 
@@ -94,8 +95,8 @@ export const SITE = {
       icon: 'calc',
       title: 'Matemáticas',
       description:
-        'De 1º ESO a 2º Bachillerato (Ciencias y CCSS). Álgebra, funciones, derivadas, integrales, probabilidad y estadística.',
-      levels: ['ESO', 'Bachillerato'],
+        'De 4º de ESO a 2º de Bachillerato (Ciencias y Ciencias Sociales). Álgebra, funciones, derivadas, integrales, probabilidad y estadística.',
+      levels: ['4º ESO', 'Bachillerato'],
     },
     {
       icon: 'atom',
@@ -118,14 +119,21 @@ export const SITE = {
         'Repaso por bloques, exámenes de convocatorias anteriores cronometrados y estrategia para el día de la prueba.',
       levels: ['2º Bachillerato', 'Intensivo'],
     },
+    {
+      icon: 'university',
+      title: 'Universidad',
+      description:
+        'Muchas carreras arrancan con asignaturas troncales de Matemáticas, Física y Química, y son las que más gente arrastra de primero. Refuerzo para aprobarlas y no llevarlas colgando todo el grado.',
+      levels: ['Primeros cursos', 'Grados científico-técnicos'],
+    },
   ] as Subject[],
 
   method: [
     {
       step: '01',
-      title: 'Diagnóstico',
+      title: 'Entrevista inicial',
       description:
-        'En la primera clase vemos dónde estás, qué te cuesta y qué necesitas: aprobar, subir nota o preparar la EBAU.',
+        'Gratuita y sin compromiso. Vemos el nivel real, qué se te atraganta y cuál es el objetivo: aprobar, subir nota o preparar la EBAU.',
     },
     {
       step: '02',
@@ -142,68 +150,70 @@ export const SITE = {
   ] as MethodStep[],
 
   facts: [
-    { label: 'Formación', value: '[Grado en Matemáticas] · [Máster en Profesorado]' },
+    { label: 'Formación', value: 'Licenciado en Químicas · Universidad de Alicante' },
     { label: 'Experiencia', value: '[X] años · más de [N] alumnos' },
-    { label: 'Modalidad', value: 'Presencial en [Ciudad] y online' },
+    { label: 'Niveles', value: 'Desde 4º de ESO hasta universidad' },
+    { label: 'Modalidad', value: 'Presenciales u online' },
     { label: 'Horario', value: 'Lunes a viernes, 16:00–21:00' },
   ] as Fact[],
 
   reviews: [
     {
       quote:
-        'Con Cristian mi hijo ha recuperado Matemáticas de 3º ESO y ahora va con confianza a los exámenes. Explica muy claro y es muy puntual.',
+        'Con Cristian mi hijo ha recuperado Matemáticas de 4º de ESO y ahora va con confianza a los exámenes. Explica muy claro y es muy puntual.',
       author: '[Nombre]',
       role: 'madre de alumno',
     },
     {
       quote:
-        'Preparé Matemáticas II para la EBAU con él. Los simulacros cronometrados marcaron la diferencia: saqué un [9].',
+        'Preparé Química para la EBAU con él. Los exámenes de otros años cronometrados marcaron la diferencia: saqué un [9].',
       author: '[Nombre]',
-      role: 'alumno de 2º Bachillerato',
+      role: 'alumno de 2º de Bachillerato',
     },
     {
       quote:
-        'Las clases online funcionan genial: pizarra digital, ejercicios después de cada clase y respuesta rápida a las dudas.',
+        'Llevaba dos convocatorias suspendiendo Química General en primero de carrera. Con él la aprobé a la siguiente.',
       author: '[Nombre]',
-      role: 'alumna de 1º Bachillerato',
+      role: 'alumna de [grado universitario]',
     },
   ] as Review[],
 
   pricing: {
-    title: 'Precios claros. Primera clase [gratis].',
+    title: 'Precios claros, sin sorpresas.',
     subtitle: 'Sin permanencia ni matrícula. Cancela con 24 h de antelación y recuperamos la clase.',
+    note: 'Antes de empezar hacemos una entrevista inicial gratuita para valorar la situación del alumno, su nivel de partida y los objetivos del curso. Sin compromiso de continuar.',
     plans: [
       {
-        name: 'Clase suelta',
-        price: '[XX] €',
+        name: 'Clases individuales',
+        price: '15 €',
         unit: '/ hora',
-        description: 'Dudas puntuales o un repaso antes del examen.',
-        features: ['60 minutos', 'Presencial u online', 'Material incluido'],
+        description: 'Alumnos de 4º de ESO a 2º de Bachillerato.',
+        features: ['Clase de 60 minutos', 'Presencial u online', 'Material y ejercicios incluidos'],
         cta: 'Reservar',
+        featured: true,
+        badge: 'Más habitual',
+      },
+      {
+        name: 'Grupo reducido',
+        price: '10–12 €',
+        unit: '/ hora y alumno',
+        description: 'Compañeros de clase con el mismo curso y asignatura.',
+        features: [
+          'El precio baja según el número de alumnos',
+          'Nunca más de 12 € ni menos de 10 € por alumno',
+          'Grupos de [2 a 4] alumnos',
+        ],
+        cta: 'Consultar',
         featured: false,
         badge: '',
       },
       {
-        name: 'Bono 8 clases',
-        price: '[XXX] €',
-        unit: '/ 8 horas',
-        description: 'Dos clases por semana durante un mes. Lo que mejor funciona.',
-        features: [
-          'Ahorras [XX] € frente a clases sueltas',
-          'Dudas por WhatsApp entre clases',
-          'Informe mensual a la familia',
-        ],
-        cta: 'Reservar bono',
-        featured: true,
-        badge: 'Recomendado',
-      },
-      {
-        name: 'Grupo de 2–3',
-        price: '[XX] €',
-        unit: '/ hora y alumno',
-        description: 'Compañeros de clase con el mismo temario.',
-        features: ['90 minutos', 'Máximo 3 alumnos', 'Ideal para EBAU'],
-        cta: 'Consultar',
+        name: 'Universidad',
+        price: '20 €',
+        unit: '/ hora',
+        description: 'Asignaturas troncales de ciencias de los primeros cursos.',
+        features: ['Clase de 60 minutos', 'Presencial u online', 'Preparación de exámenes y prácticas'],
+        cta: 'Reservar',
         featured: false,
         badge: '',
       },

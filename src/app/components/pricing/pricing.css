@@ -94,6 +94,23 @@
   color: var(--ink);
 }
 
+.pricing__note {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-top: 24px;
+  padding: 20px 24px;
+  background: var(--line-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-size: 16px;
+}
+
+.pricing__note app-icon {
+  color: var(--accent);
+  margin-top: 2px;
+}
+
 @media (max-width: 900px) {
   .plans {
     grid-template-columns: minmax(0, 1fr);

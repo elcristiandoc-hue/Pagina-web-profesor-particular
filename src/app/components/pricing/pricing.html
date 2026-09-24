@@ -36,14 +36,17 @@
             class="btn btn--block plan__cta"
             [class.btn--primary]="plan.featured"
             [class.btn--outline]="!plan.featured"
-            [href]="site.whatsappUrl"
-            target="_blank"
-            rel="noopener"
+            href="#contacto"
           >
             {{ plan.cta }}
           </a>
         </article>
       }
     </div>
+
+    <p class="pricing__note">
+      <app-icon name="check" [size]="20" />
+      <span>{{ site.pricing.note }}</span>
+    </p>
   </div>
 </section>

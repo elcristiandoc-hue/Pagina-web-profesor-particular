@@ -24,14 +24,19 @@ Lo que hay entre `[corchetes]` está pendiente de confirmar. Antes de publicar:
 
 - [ ] Teléfono real (`WHATSAPP_NUMBER`, `phoneDisplay`, `phoneHref`)
 - [ ] Email real
-- [ ] Ciudad y zona
-- [ ] Precios de los tres planes
+- [ ] Ciudad y zona (solo aparecen ya en la sección de contacto)
+- [ ] Años de experiencia y número de alumnos
+- [ ] Tamaño de los grupos reducidos (ahora pone `[2 a 4]`)
 - [ ] Enlace al perfil de Google (`google.profileUrl` y `google.writeReviewUrl`)
 - [ ] Nota media y número de reseñas
 - [ ] Reseñas reales copiadas del perfil de Google (con nombre y curso)
 - [ ] Foto: dejar el fichero en `public/` y poner la ruta en `photoUrl`
-- [ ] `src/index.html`: título, meta description, dominio y datos JSON-LD
+- [ ] `src/index.html`: dominio real en `canonical`, `og:url` y JSON-LD
 - [ ] Páginas de aviso legal, privacidad y cookies (hoy son enlaces vacíos en el pie)
+
+Ya confirmado: titulación (Licenciado en Químicas, Universidad de Alicante), niveles
+(desde 4º de ESO hasta universidad), precios (15 €/h individual, 10–12 €/h grupo,
+20 €/h universidad) y la entrevista inicial gratuita.
 
 ## Estructura
 
@@ -53,8 +58,10 @@ src/app/
     icon/                     iconos SVG
 ```
 
-El botón de WhatsApp es `position: fixed`, así que se mantiene visible durante
-todo el scroll: pastilla con texto en escritorio y círculo en móvil (≤720 px).
+Hay dos accesos a WhatsApp y solo dos: el botón flotante (`position: fixed`, visible
+durante todo el scroll — pastilla con texto en escritorio y círculo en móvil ≤720 px)
+y el de la sección de contacto. Los botones de los planes de precios llevan a
+`#contacto`, no abren WhatsApp directamente.
 
 ## Publicar
 

@@ -6,10 +6,7 @@
       <p class="lead hero__subtitle">{{ site.hero.subtitle }}</p>
 
       <div class="hero__actions">
-        <a class="btn btn--primary" [href]="site.whatsappUrl" target="_blank" rel="noopener">
-          <app-icon name="whatsapp" />
-          Escríbeme por WhatsApp
-        </a>
+        <a class="btn btn--primary" href="#precios">Ver precios</a>
         <a class="btn btn--outline" href="#opiniones">Ver opiniones</a>
       </div>
 
@@ -19,7 +16,7 @@
           <strong>{{ site.google.rating }} en Google</strong>
           <span class="hero__muted">· {{ site.google.reviewCount }} reseñas</span>
         </span>
-        <span class="hero__muted">Primera clase de prueba sin compromiso</span>
+        <span class="hero__muted">{{ site.hero.proof }}</span>
       </div>
     </div>
 
