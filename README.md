@@ -24,19 +24,27 @@ Lo que hay entre `[corchetes]` está pendiente de confirmar. Antes de publicar:
 
 - [ ] Teléfono real (`WHATSAPP_NUMBER`, `phoneDisplay`, `phoneHref`)
 - [ ] Email real
-- [ ] Ciudad y zona (solo aparecen ya en la sección de contacto)
-- [ ] Años de experiencia y número de alumnos
+- [ ] Horario real (ahora es una suposición)
 - [ ] Tamaño de los grupos reducidos (ahora pone `[2 a 4]`)
-- [ ] Enlace al perfil de Google (`google.profileUrl` y `google.writeReviewUrl`)
-- [ ] Nota media y número de reseñas
-- [ ] Reseñas reales copiadas del perfil de Google (con nombre y curso)
 - [ ] Foto: dejar el fichero en `public/` y poner la ruta en `photoUrl`
 - [ ] `src/index.html`: dominio real en `canonical`, `og:url` y JSON-LD
 - [ ] Páginas de aviso legal, privacidad y cookies (hoy son enlaces vacíos en el pie)
 
-Ya confirmado: titulación (Licenciado en Químicas, Universidad de Alicante), niveles
+Ya confirmado: titulación (Licenciado en Químicas, Universidad de Alicante),
+experiencia (más de 5 años), zona (San Vicente del Raspeig, Alicante), niveles
 (desde 4º de ESO hasta universidad), precios (15 €/h individual, 10–12 €/h grupo,
 20 €/h universidad) y la entrevista inicial gratuita.
+
+## Las reseñas
+
+Las opiniones de `site-config.ts` son **reales**, copiadas literalmente del perfil
+público de Cristian en buscatuprofesor.es (5,0 de media sobre 7 opiniones). No se
+reescriben ni se corrigen: se citan tal cual, con nombre, asignatura, curso, fecha
+y plataforma de origen.
+
+Cada reseña lleva un campo `source`, así que añadir las de otra plataforma (por
+ejemplo Google, cuando exista la ficha) es solo sumar entradas al array. La nota
+media grande de la tarjeta oscura sale de `reviewsSource`.
 
 ## Estructura
 

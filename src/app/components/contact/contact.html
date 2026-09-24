@@ -44,9 +44,10 @@
       <li class="contact__item">
         <app-icon name="star" [size]="22" />
         <span class="contact__item-text">
-          <span class="contact__label">Reseñas</span>
-          <a [href]="site.google.profileUrl" target="_blank" rel="noopener">
-            {{ site.google.rating }} ★ en Google · ver perfil
+          <span class="contact__label">Opiniones</span>
+          <a [href]="site.reviewsSource.profileUrl" target="_blank" rel="noopener">
+            {{ site.reviewsSource.rating }} ★ · {{ site.reviewsSource.reviewCount }} opiniones en
+            {{ site.reviewsSource.name }}
           </a>
         </span>
       </li>

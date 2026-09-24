@@ -23,10 +23,13 @@ export interface Fact {
   value: string;
 }
 
+/** Reseñas reales. El texto se cita literal: no se reescribe ni se corrige. */
 export interface Review {
   quote: string;
   author: string;
-  role: string;
+  context: string;
+  date: string;
+  source: string;
 }
 
 export interface Plan {
@@ -48,8 +51,8 @@ export interface NavLink {
 export const SITE = {
   name: 'Cristian Ortega',
   role: 'Profesor particular de Matemáticas, Física y Química',
-  city: '[Ciudad]',
-  area: '[barrio o zona]',
+  city: 'San Vicente del Raspeig',
+  area: 'Alicante',
   phoneDisplay: '+34 [600 000 000]',
   phoneHref: 'tel:+34600000000',
   email: '[hola@cristianortega.es]',
@@ -59,11 +62,12 @@ export const SITE = {
   scheduleLong: 'Lunes a viernes, 16:00–21:00 · sábados por la mañana',
   photoUrl: '',
 
-  google: {
-    profileUrl: 'https://g.page/[perfil-google]',
-    writeReviewUrl: 'https://g.page/[perfil-google]/review',
-    rating: '[4,9]',
-    reviewCount: '[N]',
+  /** Plataforma donde están publicadas las opiniones verificadas. */
+  reviewsSource: {
+    name: 'buscatuprofesor.es',
+    profileUrl: 'https://buscatuprofesor.es/user-57163/',
+    rating: '5,0',
+    reviewCount: '7',
   },
 
   nav: [
@@ -86,8 +90,9 @@ export const SITE = {
 
   about: {
     intro:
-      'Soy Licenciado en Químicas por la Universidad de Alicante y llevo [X] años dando clases particulares de ciencias a alumnos de 4º de ESO, Bachillerato y primeros cursos de carrera.',
+      'Soy Licenciado en Químicas por la Universidad de Alicante y llevo más de cinco años dando clases particulares de ciencias a alumnos de 4º de ESO, Bachillerato y primeros cursos de carrera.',
     body: 'Me gusta explicar con calma y sin dar nada por sabido: primero entender, luego practicar. Muchos alumnos llegan con miedo a la asignatura y terminan el curso con confianza (y con mejor nota).',
+    quote: 'Quitar un par de puntos débiles es la diferencia entre suspender y aprobar.',
   },
 
   subjects: [
@@ -139,7 +144,7 @@ export const SITE = {
       step: '02',
       title: 'Plan a medida',
       description:
-        'Ajusto las clases al temario y al ritmo de tu centro. Ejercicios escogidos, resúmenes y trucos que funcionan en el examen.',
+        'Ajusto las clases al temario y al ritmo de tu instituto o tu facultad. Ejercicios escogidos, resúmenes y trucos que funcionan en el examen.',
     },
     {
       step: '03',
@@ -151,7 +156,7 @@ export const SITE = {
 
   facts: [
     { label: 'Formación', value: 'Licenciado en Químicas · Universidad de Alicante' },
-    { label: 'Experiencia', value: '[X] años · más de [N] alumnos' },
+    { label: 'Experiencia', value: 'Más de 5 años dando clases particulares' },
     { label: 'Niveles', value: 'Desde 4º de ESO hasta universidad' },
     { label: 'Modalidad', value: 'Presenciales u online' },
     { label: 'Horario', value: 'Lunes a viernes, 16:00–21:00' },
@@ -159,22 +164,39 @@ export const SITE = {
 
   reviews: [
     {
-      quote:
-        'Con Cristian mi hijo ha recuperado Matemáticas de 4º de ESO y ahora va con confianza a los exámenes. Explica muy claro y es muy puntual.',
-      author: '[Nombre]',
-      role: 'madre de alumno',
+      quote: 'Puedo recomendar profesor Martínez Cristian, es maestro excelente',
+      author: 'Ruslana',
+      context: 'Matemáticas · 2º de Bachillerato',
+      date: 'abril de 2026',
+      source: 'buscatuprofesor.es',
     },
     {
-      quote:
-        'Preparé Química para la EBAU con él. Los exámenes de otros años cronometrados marcaron la diferencia: saqué un [9].',
-      author: '[Nombre]',
-      role: 'alumno de 2º de Bachillerato',
+      quote: 'Estamos muy contentos con Cristian, es muy buen profesor',
+      author: 'María de las Nieves',
+      context: 'Física · 2º de Bachillerato',
+      date: 'diciembre de 2025',
+      source: 'buscatuprofesor.es',
     },
     {
-      quote:
-        'Llevaba dos convocatorias suspendiendo Química General en primero de carrera. Con él la aprobé a la siguiente.',
-      author: '[Nombre]',
-      role: 'alumna de [grado universitario]',
+      quote: 'Las clases han sido satisfactorias y he obtenido buenos resultados',
+      author: 'Jeremy',
+      context: 'Matemáticas · Estudios superiores',
+      date: 'diciembre de 2025',
+      source: 'buscatuprofesor.es',
+    },
+    {
+      quote: 'Muy amable y profesional. 100% recomendable',
+      author: 'Mayte',
+      context: 'Matemáticas · 1º de Bachillerato',
+      date: 'marzo de 2025',
+      source: 'buscatuprofesor.es',
+    },
+    {
+      quote: 'Gracias a Christian y a la forma de que explica para que lo pillas',
+      author: 'Deborah Alese',
+      context: 'Física · 2º de Bachillerato',
+      date: 'febrero de 2025',
+      source: 'buscatuprofesor.es',
     },
   ] as Review[],
 
@@ -199,8 +221,8 @@ export const SITE = {
         unit: '/ hora y alumno',
         description: 'Compañeros de clase con el mismo curso y asignatura.',
         features: [
-          'El precio baja según el número de alumnos',
-          'Nunca más de 12 € ni menos de 10 € por alumno',
+          'Entre 10 € y 12 € por alumno, según cuántos seáis',
+          'Mismo curso y misma asignatura',
           'Grupos de [2 a 4] alumnos',
         ],
         cta: 'Consultar',

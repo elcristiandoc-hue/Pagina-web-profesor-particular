@@ -8,29 +8,29 @@
 
       <a
         class="btn btn--outline btn--sm reviews__all"
-        [href]="site.google.profileUrl"
+        [href]="site.reviewsSource.profileUrl"
         target="_blank"
         rel="noopener"
       >
-        Ver todas en Google
+        Ver todas en {{ site.reviewsSource.name }}
       </a>
     </div>
 
     <div class="reviews">
       <div class="reviews__score">
-        <p class="reviews__rating">{{ site.google.rating }}</p>
+        <p class="reviews__rating">{{ site.reviewsSource.rating }}</p>
         <p class="stars stars--dark stars--lg" role="img" aria-label="5 de 5 estrellas">★★★★★</p>
         <p class="reviews__meta">
-          Valoración media en Google<br />
-          {{ site.google.reviewCount }} reseñas verificadas
+          Valoración media en {{ site.reviewsSource.name }}<br />
+          {{ site.reviewsSource.reviewCount }} opiniones verificadas
         </p>
         <a
-          class="reviews__write"
-          [href]="site.google.writeReviewUrl"
+          class="reviews__link"
+          [href]="site.reviewsSource.profileUrl"
           target="_blank"
           rel="noopener"
         >
-          Dejar una reseña →
+          Ver el perfil →
         </a>
       </div>
 
@@ -40,8 +40,9 @@
           <blockquote class="review__quote">«{{ review.quote }}»</blockquote>
           <p class="review__author">
             <strong>{{ review.author }}</strong>
-            <span>&ngsp;· {{ review.role }}</span>
+            <span>&ngsp;· {{ review.context }}</span>
           </p>
+          <p class="review__source">{{ review.date }} · {{ review.source }}</p>
         </article>
       }
     </div>

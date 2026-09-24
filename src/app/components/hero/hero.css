@@ -41,6 +41,13 @@
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.hero__rating:hover {
+  color: var(--ink);
+  text-decoration: underline;
 }
 
 .hero__muted {

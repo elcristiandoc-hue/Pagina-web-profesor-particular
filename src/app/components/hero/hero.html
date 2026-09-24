@@ -11,11 +11,16 @@
       </div>
 
       <div class="hero__proof">
-        <span class="hero__rating">
+        <a
+          class="hero__rating"
+          [href]="site.reviewsSource.profileUrl"
+          target="_blank"
+          rel="noopener"
+        >
           <span class="stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
-          <strong>{{ site.google.rating }} en Google</strong>
-          <span class="hero__muted">· {{ site.google.reviewCount }} reseñas</span>
-        </span>
+          <strong>{{ site.reviewsSource.rating }} en {{ site.reviewsSource.name }}</strong>
+          <span class="hero__muted">· {{ site.reviewsSource.reviewCount }} opiniones</span>
+        </a>
         <span class="hero__muted">{{ site.hero.proof }}</span>
       </div>
     </div>

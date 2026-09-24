@@ -17,7 +17,7 @@
 
 .reviews {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
   margin-top: 40px;
 }
@@ -44,14 +44,14 @@
   color: var(--on-dark);
 }
 
-.reviews__write {
+.reviews__link {
   margin-top: auto;
   color: var(--white);
   font-weight: 700;
   font-size: 15px;
 }
 
-.reviews__write:hover {
+.reviews__link:hover {
   color: var(--gold-light);
 }
 
@@ -72,7 +72,14 @@
   color: var(--muted);
 }
 
-@media (max-width: 1040px) {
+.review__source {
+  font-size: 13px;
+  color: var(--muted);
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 900px) {
   .reviews {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
