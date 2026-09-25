@@ -81,9 +81,9 @@ export const SITE = {
 
   hero: {
     eyebrow: 'Clases particulares online · toda España',
-    title: 'Matemáticas, Física y Química explicadas hasta que se entienden.',
+    title: 'Explicaciones simples para problemas complejos.',
     subtitle:
-      'Desde 4º de ESO hasta los primeros cursos de universidad. Clases por videollamada, con un plan a medida y seguimiento entre clase y clase.',
+      'Clases de refuerzo de Matemáticas, Física y Química, individuales o en grupos reducidos. Desde 4º de ESO hasta los primeros cursos de universidad.',
     proof: 'Entrevista inicial gratuita, sin compromiso',
     credentialTitle: 'Licenciado en Químicas · Universidad de Alicante',
     credentialSubtitle: '9 años dando clases · más de 50 alumnos',

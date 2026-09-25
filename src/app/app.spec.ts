@@ -17,7 +17,7 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Matemáticas, Física y Química');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Explicaciones simples');
   });
 
   it('should keep the WhatsApp button pinned to the viewport', async () => {
