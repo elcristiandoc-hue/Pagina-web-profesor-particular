@@ -63,7 +63,7 @@
 
 .hero__photo {
   width: 100%;
-  height: clamp(280px, 40vw, 440px);
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: var(--radius);
 }

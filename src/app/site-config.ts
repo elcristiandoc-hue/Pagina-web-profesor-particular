@@ -60,7 +60,7 @@ export const SITE = {
   whatsappUrl: `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`,
   schedule: 'Lunes a viernes, 16:00–21:00',
   scheduleLong: 'Lunes a viernes, 16:00–21:00 · sábados por la mañana',
-  photoUrl: '',
+  photoUrl: 'cristian-ortega.jpg',
 
   /** Plataforma donde están publicadas las opiniones verificadas. */
   reviewsSource: {

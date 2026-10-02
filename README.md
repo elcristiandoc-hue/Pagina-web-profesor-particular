@@ -24,8 +24,7 @@ Lo que hay entre `[corchetes]` está pendiente de confirmar. Antes de publicar:
 
 - [ ] Email real
 - [ ] Horario real (ahora es una suposición)
-- [ ] Foto: dejar el fichero en `public/` y poner la ruta en `photoUrl`
-- [ ] `src/index.html`: dominio real en `canonical`, `og:url` y JSON-LD
+- [ ] `src/index.html`: dominio real en `canonical`, `og:url`, `og:image` y JSON-LD
 - [ ] Páginas de aviso legal, privacidad y cookies (hoy son enlaces vacíos en el pie)
 
 Ya confirmado: titulación (Licenciado en Químicas, Universidad de Alicante),
