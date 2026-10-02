@@ -91,3 +91,15 @@
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* El email es largo: sin esto parte dejando un ".com" suelto. */
+@media (max-width: 480px) {
+  .contact__item {
+    gap: 12px;
+    padding: 16px 14px;
+  }
+
+  .contact__item-text a {
+    font-size: 15px;
+  }
+}
