@@ -24,7 +24,7 @@ Lo que hay entre `[corchetes]` está pendiente de confirmar. Antes de publicar:
 
 - [ ] Email real
 - [ ] Horario real (ahora es una suposición)
-- [ ] **NIF** en `public/aviso-legal.html` y `public/privacidad.html`
+
 - [ ] **Código postal** del domicilio en `public/aviso-legal.html`, y confirmar que la
       calle y el número son correctos: se tomaron del perfil público de buscatuprofesor,
       no de una fuente propia
