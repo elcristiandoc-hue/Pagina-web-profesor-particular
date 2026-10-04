@@ -24,9 +24,14 @@ Lo que hay entre `[corchetes]` está pendiente de confirmar. Antes de publicar:
 
 - [ ] Email real
 - [ ] Horario real (ahora es una suposición)
-- [ ] **NIF y domicilio** en `public/aviso-legal.html` y `public/privacidad.html`: la LSSI
-      obliga a publicarlos al tratarse de una actividad económica. Están marcados en
-      amarillo en ambas páginas para que no pasen desapercibidos.
+- [ ] **NIF** en `public/aviso-legal.html` y `public/privacidad.html`
+- [ ] **Código postal** del domicilio en `public/aviso-legal.html`, y confirmar que la
+      calle y el número son correctos: se tomaron del perfil público de buscatuprofesor,
+      no de una fuente propia
+
+Lo pendiente va marcado en amarillo dentro de las propias páginas. La LSSI obliga a
+publicar NIF y domicilio al tratarse de una actividad económica; el RGPD no exige
+dirección postal, por eso la política de privacidad solo lleva NIF, correo y teléfono.
 
 Ya confirmado: titulación (Licenciado en Químicas, Universidad de Alicante),
 experiencia (9 años, más de 50 alumnos), niveles (desde 4º de ESO hasta
