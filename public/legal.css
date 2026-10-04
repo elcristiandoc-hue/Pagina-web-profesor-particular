@@ -1,0 +1,194 @@
+/* Estilos de las páginas legales. Son HTML estático servido tal cual,
+   así que no pueden reutilizar los estilos de la aplicación Angular. */
+
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url('/fonts/fraunces-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/nunito-sans-latin.woff2') format('woff2');
+}
+
+:root {
+  --cream: #f7f3ec;
+  --white: #ffffff;
+  --ink: #1b2233;
+  --muted: #565d6d;
+  --line: #e4dccb;
+  --accent: #a34a25;
+  --accent-dark: #7e3719;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'Nunito Sans', 'Segoe UI', system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.shell {
+  width: 100%;
+  max-width: 760px;
+  margin-inline: auto;
+  padding-inline: clamp(20px, 5vw, 32px);
+}
+
+.top {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 48px;
+}
+
+.top .shell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  min-height: 76px;
+  padding-block: 12px;
+}
+
+.brand {
+  font-family: Fraunces, Georgia, serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.back {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.back:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: clamp(30px, 5vw, 42px);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 8px;
+}
+
+.updated {
+  margin: 0 0 40px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+h2 {
+  font-family: Fraunces, Georgia, serif;
+  font-size: clamp(21px, 3vw, 25px);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 40px 0 12px;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 24px 0 8px;
+}
+
+p,
+li {
+  margin: 0 0 14px;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Datos que el titular todavía tiene que rellenar. */
+.pendiente {
+  background: #f6e6c8;
+  border-bottom: 2px solid #b8800a;
+  padding: 0 4px;
+  font-weight: 700;
+}
+
+.datos {
+  margin: 0;
+  padding: 24px 28px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.datos div {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.datos div:last-child {
+  border-bottom: 0;
+}
+
+.datos dt {
+  flex: 0 0 150px;
+  font-weight: 700;
+}
+
+.datos dd {
+  margin: 0;
+  flex: 1 1 240px;
+  overflow-wrap: anywhere;
+}
+
+.foot {
+  margin-top: 64px;
+  padding: 28px 0 48px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.foot nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}

@@ -24,7 +24,9 @@ Lo que hay entre `[corchetes]` está pendiente de confirmar. Antes de publicar:
 
 - [ ] Email real
 - [ ] Horario real (ahora es una suposición)
-- [ ] Páginas de aviso legal, privacidad y cookies (hoy son enlaces vacíos en el pie)
+- [ ] **NIF y domicilio** en `public/aviso-legal.html` y `public/privacidad.html`: la LSSI
+      obliga a publicarlos al tratarse de una actividad económica. Están marcados en
+      amarillo en ambas páginas para que no pasen desapercibidos.
 
 Ya confirmado: titulación (Licenciado en Químicas, Universidad de Alicante),
 experiencia (9 años, más de 50 alumnos), niveles (desde 4º de ESO hasta
