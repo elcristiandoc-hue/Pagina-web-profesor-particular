@@ -22,16 +22,26 @@ perfil de Google, asignaturas, método, reseñas y precios.
 
 Lo que hay entre `[corchetes]` está pendiente de confirmar. Antes de publicar:
 
-- [ ] Email real
-- [ ] Horario real (ahora es una suposición)
+- [ ] Horario real: ahora dice «lunes a viernes, 16:00–21:00», que fue una suposición
+      y nadie la ha confirmado
 
-- [ ] **Código postal** del domicilio en `public/aviso-legal.html`, y confirmar que la
-      calle y el número son correctos: se tomaron del perfil público de buscatuprofesor,
-      no de una fuente propia
+## Las páginas legales
 
-Lo pendiente va marcado en amarillo dentro de las propias páginas. La LSSI obliga a
-publicar NIF y domicilio al tratarse de una actividad económica; el RGPD no exige
-dirección postal, por eso la política de privacidad solo lleva NIF, correo y teléfono.
+Están completas. Son HTML estático en `public/` (`aviso-legal.html`, `privacidad.html`,
+`cookies.html`), no rutas de Angular: son documentos que se visitan de tarde en tarde y
+no justifican añadir un enrutador a una web de una sola página. Cloudflare las sirve sin
+extensión, así que los enlaces apuntan a `/aviso-legal`, `/privacidad` y `/cookies`.
+
+El aviso legal lleva nombre, NIF y domicilio, que es lo que exige el artículo 10 de la
+LSSI al tratarse de una actividad económica. El RGPD no pide dirección postal, solo
+identidad y datos de contacto, de modo que la política de privacidad se queda con
+nombre, NIF, correo y teléfono y remite al aviso legal: así el domicilio aparece en un
+único sitio.
+
+No hace falta banner de cookies porque no hay ninguna que consentir: sin analítica, sin
+cookies propias y con las tipografías alojadas en `public/fonts/` en lugar de pedirlas a
+Google. Si algún día se añade medición, habrá que actualizar `cookies.html` y poner el
+aviso de consentimiento.
 
 Ya confirmado: titulación (Licenciado en Químicas, Universidad de Alicante),
 experiencia (9 años, más de 50 alumnos), niveles (desde 4º de ESO hasta
