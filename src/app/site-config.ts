@@ -44,6 +44,12 @@ export interface Plan {
   badge: string;
 }
 
+/** Pregunta frecuente: se escribe como la teclearía alguien en Google. */
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface NavLink {
   href: string;
   label: string;
@@ -60,7 +66,14 @@ export const SITE = {
   whatsappUrl: `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`,
   schedule: 'Lunes a viernes, 16:00–21:00',
   scheduleLong: 'Lunes a viernes, 16:00–21:00 · sábados por la mañana',
-  photoUrl: 'cristian-ortega.jpg',
+  photo: {
+    src: 'cristian-ortega-1000.webp',
+    srcset:
+      'cristian-ortega-480.webp 480w, cristian-ortega-720.webp 720w, cristian-ortega-1000.webp 1000w',
+    width: 1000,
+    height: 1000,
+    alt: 'Cristian Ortega, profesor particular de Matemáticas, Física y Química',
+  },
 
   /** Plataforma donde están publicadas las opiniones verificadas. */
   reviewsSource: {
@@ -80,10 +93,12 @@ export const SITE = {
   ] as NavLink[],
 
   hero: {
-    eyebrow: 'Clases particulares online · toda España',
-    title: 'Explicaciones simples para problemas complejos.',
+    /** Es el H1: lo que se busca en Google. Se ve pequeño, encima del lema. */
+    heading: 'Clases particulares online de Matemáticas, Física y Química',
+    /** El lema de Cristian: se ve como titular, pero no es el H1. */
+    tagline: 'Explicaciones simples para problemas complejos.',
     subtitle:
-      'Clases de refuerzo de Matemáticas, Física y Química, individuales o en grupos reducidos. Desde 4º de ESO hasta los primeros cursos de universidad.',
+      'Refuerzo individual o en grupos reducidos, por videollamada, para alumnos de toda España. Desde 4º de ESO hasta la Selectividad y los primeros cursos de universidad.',
     proof: 'Entrevista inicial gratuita, sin compromiso',
     credentialTitle: 'Licenciado en Químicas · Universidad de Alicante',
     credentialSubtitle: '9 años dando clases · más de 50 alumnos',
@@ -123,9 +138,9 @@ export const SITE = {
     },
     {
       icon: 'cap',
-      title: 'EBAU / Selectividad',
+      title: 'Selectividad (PAU)',
       description:
-        'Repaso por bloques, exámenes de convocatorias anteriores cronometrados y estrategia para el día de la prueba.',
+        'PAU, EBAU, EvAU o PEvAU: según la comunidad cambia el nombre. Repaso por bloques, exámenes cronometrados de convocatorias anteriores de tu comunidad y estrategia para el día de la prueba.',
       levels: ['2º Bachillerato', 'Intensivo'],
       featured: false,
     },
@@ -144,7 +159,7 @@ export const SITE = {
       step: '01',
       title: 'Entrevista inicial',
       description:
-        'Gratuita y sin compromiso. Vemos el nivel real, qué se te atraganta y cuál es el objetivo: aprobar, subir nota o preparar la EBAU.',
+        'Gratuita y sin compromiso. Vemos el nivel real, qué se te atraganta y cuál es el objetivo: aprobar, subir nota o preparar la Selectividad.',
     },
     {
       step: '02',
@@ -272,4 +287,52 @@ export const SITE = {
       },
     ] as Plan[],
   },
+
+  faq: [
+    {
+      question: '¿Cómo funcionan las clases particulares online?',
+      answer:
+        'Por videollamada, con tu temario y al ritmo de tus clases. Solo necesitas una conexión a internet estable y un micrófono; la cámara ayuda, pero no es imprescindible. Así doy clase a alumnos de toda España.',
+    },
+    {
+      question: '¿Cuánto cuesta una clase particular?',
+      answer:
+        'Las clases individuales, de 4º de ESO a 2º de Bachillerato, cuestan 15 € la hora. En grupo reducido, de 2 a 5 alumnos, son 10–12 € por alumno y hora. Las de universidad, 20 € la hora. Sin matrícula ni permanencia.',
+    },
+    {
+      question: '¿Preparas la Selectividad (PAU, EBAU o EvAU)?',
+      answer:
+        'Sí. Según la comunidad se llama PAU, EBAU, EvAU o PEvAU, y cada una tiene su estilo de examen. Repasamos por bloques y hacemos, cronometrados, exámenes de convocatorias anteriores de tu comunidad: Matemáticas (también las de Ciencias Sociales), Física y Química.',
+    },
+    {
+      question: '¿Das clases particulares a universitarios?',
+      answer:
+        'Sí, y no es lo habitual: la mayoría de profesores particulares se quedan en Bachillerato. Preparo las troncales de Matemáticas, Física y Química de los primeros cursos de grados científico-técnicos, tanto exámenes como prácticas.',
+    },
+    {
+      question: '¿En qué consiste la entrevista inicial gratuita?',
+      answer:
+        'Antes de empezar hablamos para ver tu nivel real, qué se te atraganta y cuál es el objetivo: aprobar, subir nota o preparar la Selectividad. Es gratis y no te compromete a seguir.',
+    },
+    {
+      question: '¿Puedo dar clase en grupo con mis compañeros?',
+      answer:
+        'Sí, si sois del mismo curso y la misma asignatura. Los grupos son de 2 a 5 alumnos y cada uno paga entre 10 € y 12 € la hora, según cuántos seáis.',
+    },
+    {
+      question: '¿Das clases presenciales?',
+      answer:
+        'Las clases son online. Si vives cerca de Alicante y prefieres que sean presenciales, pregúntame por disponibilidad.',
+    },
+    {
+      question: '¿Cómo se paga y qué pasa si no puedo ir a una clase?',
+      answer:
+        'Por Bizum o transferencia. Si avisas con 24 horas de antelación, recuperamos la clase.',
+    },
+    {
+      question: '¿Puedo preguntarte dudas entre clases?',
+      answer:
+        'Sí, por WhatsApp. Y si la familia quiere, envío un breve informe de progreso cada mes.',
+    },
+  ] as FaqItem[],
 };

@@ -1,0 +1,23 @@
+<section class="section" id="preguntas">
+  <div class="shell faq">
+    <div class="section-head">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 class="section-title">Lo que suele preguntarse antes de empezar</h2>
+      <p class="lead">
+        Si tu duda no está aquí, <a href="#contacto">escríbeme</a> y te respondo el mismo día.
+      </p>
+    </div>
+
+    <div class="faq__list">
+      @for (item of site.faq; track item.question) {
+        <details class="faq__item">
+          <summary class="faq__question">
+            <h3 class="faq__title">{{ item.question }}</h3>
+            <span class="faq__toggle" aria-hidden="true"></span>
+          </summary>
+          <p class="faq__answer">{{ item.answer }}</p>
+        </details>
+      }
+    </div>
+  </div>
+</section>

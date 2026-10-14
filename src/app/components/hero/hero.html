@@ -1,8 +1,8 @@
 <section class="section">
   <div class="shell hero">
     <div class="hero__text">
-      <p class="eyebrow">{{ site.hero.eyebrow }}</p>
-      <h1 class="hero__title">{{ site.hero.title }}</h1>
+      <h1 class="eyebrow hero__heading">{{ site.hero.heading }}</h1>
+      <p class="hero__title">{{ site.hero.tagline }}</p>
       <p class="lead hero__subtitle">{{ site.hero.subtitle }}</p>
 
       <div class="hero__actions">
@@ -26,8 +26,17 @@
     </div>
 
     <div class="hero__aside">
-      @if (site.photoUrl) {
-        <img class="hero__photo" [src]="site.photoUrl" [alt]="'Foto de ' + site.name" />
+      @if (site.photo.src) {
+        <img
+          class="hero__photo"
+          [src]="site.photo.src"
+          [attr.srcset]="site.photo.srcset"
+          sizes="(max-width: 860px) 100vw, 520px"
+          [attr.width]="site.photo.width"
+          [attr.height]="site.photo.height"
+          [alt]="site.photo.alt"
+          fetchpriority="high"
+        />
       } @else {
         <div class="hero__photo hero__photo--empty">
           <app-icon name="user" [size]="96" />

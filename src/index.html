@@ -5,26 +5,29 @@
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Cristian Ortega · Clases particulares de Matemáticas, Física y Química</title>
+    <title>Clases particulares online de Matemáticas, Física y Química · Cristian Ortega</title>
     <meta
       name="description"
-      content="Clases particulares online de Matemáticas, Física y Química para toda España, desde 4º de ESO hasta primeros cursos de universidad. Entrevista inicial gratuita."
+      content="Profesor particular online de Matemáticas, Física y Química para toda España: 4º de ESO, Bachillerato, PAU y universidad. Desde 15 €/h, entrevista inicial gratis."
     />
     <meta name="theme-color" content="#f7f3ec" />
     <link rel="canonical" href="https://cristianortega.com/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Cristian Ortega" />
     <meta
       property="og:title"
-      content="Cristian Ortega · Clases particulares de Matemáticas, Física y Química"
+      content="Clases particulares online de Matemáticas, Física y Química · Cristian Ortega"
     />
     <meta
       property="og:description"
-      content="Clases online para toda España, desde 4º de ESO hasta primeros cursos de universidad. Entrevista inicial gratuita."
+      content="Por videollamada, para toda España: 4º de ESO, Bachillerato, Selectividad (PAU) y primeros cursos de universidad. Entrevista inicial gratuita."
     />
     <meta property="og:url" content="https://cristianortega.com/" />
     <meta property="og:image" content="https://cristianortega.com/cristian-ortega.jpg" />
+    <meta property="og:image:width" content="1000" />
+    <meta property="og:image:height" content="1000" />
     <meta
       property="og:image:alt"
       content="Cristian Ortega, profesor particular de Matemáticas, Física y Química"
@@ -40,55 +43,101 @@
     />
     <link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
 
+    <!--
+      Datos estructurados. Los precios repiten los de site-config.ts: si cambian allí, aquí también.
+      No llevan valoración agregada a propósito: Google prohíbe marcar reseñas copiadas de otra web.
+    -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "@id": "https://cristianortega.com/#clases",
-        "serviceType": "Clases particulares de Matemáticas, Física y Química",
-        "description": "Clases particulares online de Matemáticas, Física y Química desde 4º de ESO hasta primeros cursos de universidad.",
-        "url": "https://cristianortega.com/",
-        "provider": {
-          "@type": "Person",
-          "name": "Cristian Ortega Martínez",
-          "jobTitle": "Profesor particular de Matemáticas, Física y Química",
-          "image": "https://cristianortega.com/cristian-ortega.jpg",
-          "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad de Alicante" },
-          "telephone": "+34618848828",
-          "email": "hola@cristianortega.com",
-          "sameAs": ["https://buscatuprofesor.es/user-57163/"]
-        },
-        "areaServed": { "@type": "Country", "name": "España" },
-        "availableChannel": {
-          "@type": "ServiceChannel",
-          "serviceLocation": { "@type": "VirtualLocation", "name": "Videollamada" }
-        },
-        "offers": [
+        "@graph": [
           {
-            "@type": "Offer",
-            "name": "Clases individuales",
-            "price": "15",
-            "priceCurrency": "EUR",
-            "description": "Por hora, de 4º de ESO a 2º de Bachillerato"
+            "@type": "WebSite",
+            "@id": "https://cristianortega.com/#web",
+            "url": "https://cristianortega.com/",
+            "name": "Cristian Ortega · Clases particulares",
+            "inLanguage": "es-ES",
+            "publisher": { "@id": "https://cristianortega.com/#cristian" }
           },
           {
-            "@type": "Offer",
-            "name": "Grupo reducido",
-            "priceCurrency": "EUR",
-            "priceSpecification": {
-              "@type": "PriceSpecification",
-              "minPrice": "10",
-              "maxPrice": "12",
-              "priceCurrency": "EUR"
+            "@type": "Person",
+            "@id": "https://cristianortega.com/#cristian",
+            "name": "Cristian Ortega Martínez",
+            "alternateName": "Cristian Ortega",
+            "url": "https://cristianortega.com/",
+            "image": "https://cristianortega.com/cristian-ortega.jpg",
+            "jobTitle": "Profesor particular de Matemáticas, Física y Química",
+            "description": "Licenciado en Químicas por la Universidad de Alicante, con nueve años de experiencia y más de cincuenta alumnos de clases particulares de ciencias.",
+            "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad de Alicante" },
+            "hasCredential": {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "degree",
+              "name": "Licenciatura en Química",
+              "recognizedBy": { "@type": "CollegeOrUniversity", "name": "Universidad de Alicante" }
             },
-            "description": "Por hora y alumno, grupos de 2 a 5"
+            "knowsAbout": ["Matemáticas", "Física", "Química", "Selectividad (PAU)"],
+            "knowsLanguage": "es",
+            "telephone": "+34618848828",
+            "email": "hola@cristianortega.com",
+            "sameAs": ["https://buscatuprofesor.es/user-57163/"]
           },
           {
-            "@type": "Offer",
-            "name": "Universidad",
-            "price": "20",
-            "priceCurrency": "EUR",
-            "description": "Por hora, troncales de ciencias de primeros cursos"
+            "@type": "Service",
+            "@id": "https://cristianortega.com/#clases",
+            "name": "Clases particulares online de Matemáticas, Física y Química",
+            "serviceType": "Clases particulares",
+            "description": "Clases particulares online de Matemáticas, Física y Química, individuales o en grupos reducidos, desde 4º de ESO y Bachillerato hasta la Selectividad (PAU) y los primeros cursos de universidad.",
+            "url": "https://cristianortega.com/",
+            "provider": { "@id": "https://cristianortega.com/#cristian" },
+            "areaServed": { "@type": "Country", "name": "España" },
+            "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
+            "availableChannel": {
+              "@type": "ServiceChannel",
+              "serviceUrl": "https://cristianortega.com/#contacto",
+              "serviceLocation": { "@type": "VirtualLocation", "name": "Videollamada" }
+            },
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Clases individuales",
+                "description": "De 4º de ESO a 2º de Bachillerato",
+                "url": "https://cristianortega.com/#precios",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "15",
+                  "priceCurrency": "EUR",
+                  "unitCode": "HUR",
+                  "unitText": "hora"
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "Grupo reducido",
+                "description": "Grupos de 2 a 5 alumnos del mismo curso y asignatura; precio por alumno",
+                "url": "https://cristianortega.com/#precios",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "minPrice": "10",
+                  "maxPrice": "12",
+                  "priceCurrency": "EUR",
+                  "unitCode": "HUR",
+                  "unitText": "hora y alumno"
+                }
+              },
+              {
+                "@type": "Offer",
+                "name": "Universidad",
+                "description": "Troncales de ciencias de los primeros cursos de carrera",
+                "url": "https://cristianortega.com/#precios",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": "20",
+                  "priceCurrency": "EUR",
+                  "unitCode": "HUR",
+                  "unitText": "hora"
+                }
+              }
+            ]
           }
         ]
       }

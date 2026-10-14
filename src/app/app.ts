@@ -1,6 +1,7 @@
 import { afterNextRender, ChangeDetectionStrategy, Component } from '@angular/core';
 import { About } from './components/about/about';
 import { Contact } from './components/contact/contact';
+import { Faq } from './components/faq/faq';
 import { Hero } from './components/hero/hero';
 import { Method } from './components/method/method';
 import { Online } from './components/online/online';
@@ -23,6 +24,7 @@ import { WhatsappFab } from './components/whatsapp-fab/whatsapp-fab';
     About,
     Reviews,
     Pricing,
+    Faq,
     Contact,
     SiteFooter,
     WhatsappFab,
