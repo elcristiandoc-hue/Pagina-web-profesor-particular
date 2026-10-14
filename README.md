@@ -2,7 +2,8 @@
 
 Landing de una sola página en Angular 22 (standalone + signals), sin backend.
 Pensada para ser barata de mantener: se publica como sitio estático y el contacto
-va directo a WhatsApp.
+va directo a WhatsApp. La página se pre-renderiza al compilar, así que el HTML que
+reciben Google y los demás buscadores ya lleva todo el texto.
 
 ## Arrancar
 
@@ -18,7 +19,7 @@ npm test           # tests unitarios (vitest)
 Casi todo el texto y los datos están en un único fichero:
 
 **`src/app/site-config.ts`** — nombre, ciudad, teléfono, email, enlace de WhatsApp,
-perfil de Google, asignaturas, método, reseñas y precios.
+foto, asignaturas, método, reseñas, precios y preguntas frecuentes.
 
 Lo que hay entre `[corchetes]` está pendiente de confirmar. Antes de publicar:
 
@@ -52,9 +53,10 @@ universidad) y la entrevista inicial gratuita.
 
 Cristian da clase por videollamada a alumnos de toda España; lo presencial es la
 excepción y solo en la zona de Alicante. Por eso la web **no** se vende como
-negocio local: no hay ciudad en el titular ni dirección postal, y el JSON-LD es un
-`Service` con `areaServed` España, no un `LocalBusiness`. Si algún día cambia el
-enfoque, ese es el primer sitio que tocar.
+negocio local: no hay ciudad en el titular ni dirección postal, y el JSON-LD de
+`src/index.html` describe la web, a Cristian como `Person` y un `Service` con
+`areaServed` España, no un `LocalBusiness`. Si algún día cambia el enfoque, ese es
+el primer sitio que tocar.
 
 ## Las reseñas
 
@@ -67,12 +69,54 @@ Cada reseña lleva un campo `source`, así que añadir las de otra plataforma (p
 ejemplo Google, cuando exista la ficha) es solo sumar entradas al array. La nota
 media grande de la tarjeta oscura sale de `reviewsSource`.
 
+## SEO
+
+Lo que hay que respetar al editar:
+
+- **Un solo H1, y dice qué se ofrece.** Es «Clases particulares online de Matemáticas,
+  Física y Química» (`hero.heading`). Se ve como antetítulo; el lema de Cristian
+  (`hero.tagline`) es el texto grande, pero es un párrafo.
+- **Selectividad con todos sus nombres.** PAU, EBAU, EvAU y PEvAU: cada comunidad la
+  llama de una forma y la gente busca la suya.
+- **Preguntas frecuentes solo con datos confirmados.** Son lo que más se parece a lo
+  que la gente teclea en Google y lo que citan los asistentes de IA. Si se añade una,
+  que no invente nada: el horario, por ejemplo, sigue sin confirmar y no aparece.
+- **Los precios están en tres sitios:** los planes y las preguntas frecuentes de
+  `site-config.ts`, y el JSON-LD de `src/index.html`. Un test comprueba que las
+  preguntas frecuentes citan los mismos precios que los planes; el JSON-LD hay que
+  cambiarlo a mano.
+- **Sin valoración agregada en el JSON-LD.** Las reseñas están copiadas de
+  buscatuprofesor.es y Google prohíbe marcar como propias las de otra web.
+- **La foto se sirve en WebP** en tres tamaños (`cristian-ortega-480/720/1000.webp`),
+  con ancho y alto declarados para que no mueva la página al cargar. El JPG original
+  se queda para la vista previa en redes y WhatsApp (`og:image`). Si se cambia la
+  foto, hay que regenerar los tres WebP.
+- **Las páginas legales llevan `noindex`.** No aportan nada en Google y así el NIF y
+  el domicilio no aparecen al buscar el nombre de Cristian. Siguen enlazadas en el pie.
+- **`public/sitemap.xml`** solo lista la portada. Cada página nueva que deba salir en
+  Google tiene que añadirse ahí.
+
+Pendiente fuera del repositorio:
+
+- [ ] Crear en Cloudflare el registro DNS de `www` y redirigirlo a
+      `https://cristianortega.com`. Ahora `www.cristianortega.com` no resuelve.
+- [ ] Dar de alta el dominio en Google Search Console y en Bing Webmaster Tools
+      (verificación por DNS en Cloudflare) y enviar el sitemap en los dos.
+- [ ] Comprobar tras publicar que `/robots.txt` sirve el de `public/` con la línea
+      del sitemap. Si Cloudflare tiene activado su robots.txt gestionado, antepone
+      sus comentarios al nuestro, y eso es correcto.
+
 ## Estructura
 
 ```
+src/
+  index.html                  título, descripción, Open Graph y JSON-LD
+  main.server.ts              arranque para el pre-renderizado
 src/app/
   site-config.ts              datos editables
   app.ts                      shell: orden de las secciones
+  app.config.server.ts        configuración del pre-renderizado
+  app.routes.server.ts        qué se pre-renderiza (todo)
   components/
     site-header/              cabecera y navegación
     hero/                     titular, CTA y valoración de Google
@@ -81,6 +125,7 @@ src/app/
     about/                    sobre mí + ficha de datos
     reviews/                  opiniones + nota media de Google
     pricing/                  planes de precios
+    faq/                      preguntas frecuentes
     contact/                  contacto
     site-footer/              pie
     whatsapp-fab/             botón flotante de WhatsApp
@@ -99,5 +144,10 @@ El build genera HTML/CSS/JS estáticos, así que vale cualquier hosting gratuito
 GitHub Pages, Netlify o Cloudflare Pages. Subiendo el contenido de
 `dist/profesor-cristian-ortega/browser`. El único coste recurrente es el dominio.
 
-Al ser una SPA, conviene configurar el hosting para servir `index.html` en
-cualquier ruta (en Netlify, un `_redirects` con `/* /index.html 200`).
+Angular pre-renderiza la portada al compilar (`outputMode: "static"` en
+`angular.json`): `index.html` sale con todo el contenido y, al cargar, Angular
+reutiliza ese HTML en lugar de pintarlo de nuevo (hidratación). No hace falta
+servidor Node. Las direcciones que no existen devuelven `404.html` con un 404 real,
+así que **no** hay que redirigir todas las rutas a `index.html`. El build también
+deja un `index.csr.html`, la versión sin pre-renderizar, que no se enlaza desde
+ningún sitio.
