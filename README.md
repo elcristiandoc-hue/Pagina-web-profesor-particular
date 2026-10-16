@@ -111,7 +111,7 @@ Pendiente fuera del repositorio:
       200; la etiqueta canónica evita el contenido duplicado, pero la redirección es
       lo limpio.
 - [x] Dar de alta el dominio en Google Search Console.
-- [ ] Importar el sitio en Bing Webmaster Tools desde Search Console.
+- [x] Dar de alta el sitio en Bing Webmaster Tools, importado desde Search Console.
 - [x] Comprobar que `/robots.txt` sirve el de `public/` con la línea del sitemap.
 - [x] Crear el Perfil de Empresa en Google y enlazarlo desde la web.
 
