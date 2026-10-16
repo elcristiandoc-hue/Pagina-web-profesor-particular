@@ -105,11 +105,8 @@ Lo que hay que respetar al editar:
 
 Pendiente fuera del repositorio:
 
-- [x] Crear en Cloudflare el registro DNS de `www`.
-- [ ] Redirigir `www.cristianortega.com` a `https://cristianortega.com` con una
-      regla de redirección 301 en Cloudflare. Ahora sirve la misma página con código
-      200; la etiqueta canónica evita el contenido duplicado, pero la redirección es
-      lo limpio.
+- [x] Crear en Cloudflare el registro DNS de `www` y redirigirlo con un 301 a
+      `https://cristianortega.com`, conservando la ruta.
 - [x] Dar de alta el dominio en Google Search Console.
 - [x] Dar de alta el sitio en Bing Webmaster Tools, importado desde Search Console.
 - [x] Comprobar que `/robots.txt` sirve el de `public/` con la línea del sitemap.
