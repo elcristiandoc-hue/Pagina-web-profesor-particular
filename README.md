@@ -58,6 +58,11 @@ negocio local: no hay ciudad en el titular ni dirección postal, y el JSON-LD de
 `areaServed` España, no un `LocalBusiness`. Si algún día cambia el enfoque, ese es
 el primer sitio que tocar.
 
+Lo local lo cubre el Perfil de Empresa en Google, creado en octubre de 2026 como
+negocio de área de servicio en San Vicente del Raspeig y alrededores. La web lo enlaza
+desde la tarjeta de opiniones del contacto y desde el `sameAs` del JSON-LD, para que
+Google sepa que la web y la ficha son de la misma persona.
+
 ## Las reseñas
 
 Las opiniones de `site-config.ts` son **reales**, copiadas literalmente del perfil
@@ -66,7 +71,7 @@ reescriben ni se corrigen: se citan tal cual, con nombre, asignatura, curso, fec
 y plataforma de origen.
 
 Cada reseña lleva un campo `source`, así que añadir las de otra plataforma (por
-ejemplo Google, cuando exista la ficha) es solo sumar entradas al array. La nota
+ejemplo las de la ficha de Google) es solo sumar entradas al array. La nota
 media grande de la tarjeta oscura sale de `reviewsSource`.
 
 ## SEO
@@ -85,6 +90,8 @@ Lo que hay que respetar al editar:
   `site-config.ts`, y el JSON-LD de `src/index.html`. Un test comprueba que las
   preguntas frecuentes citan los mismos precios que los planes; el JSON-LD hay que
   cambiarlo a mano.
+- **El enlace a la ficha de Google está en dos sitios:** `googleProfileUrl` en
+  `site-config.ts` y el `sameAs` de `src/index.html`. Si cambia, hay que tocar los dos.
 - **Sin valoración agregada en el JSON-LD.** Las reseñas están copiadas de
   buscatuprofesor.es y Google prohíbe marcar como propias las de otra web.
 - **La foto se sirve en WebP** en tres tamaños (`cristian-ortega-480/720/1000.webp`),
@@ -98,13 +105,15 @@ Lo que hay que respetar al editar:
 
 Pendiente fuera del repositorio:
 
-- [ ] Crear en Cloudflare el registro DNS de `www` y redirigirlo a
-      `https://cristianortega.com`. Ahora `www.cristianortega.com` no resuelve.
-- [ ] Dar de alta el dominio en Google Search Console y en Bing Webmaster Tools
-      (verificación por DNS en Cloudflare) y enviar el sitemap en los dos.
-- [ ] Comprobar tras publicar que `/robots.txt` sirve el de `public/` con la línea
-      del sitemap. Si Cloudflare tiene activado su robots.txt gestionado, antepone
-      sus comentarios al nuestro, y eso es correcto.
+- [x] Crear en Cloudflare el registro DNS de `www`.
+- [ ] Redirigir `www.cristianortega.com` a `https://cristianortega.com` con una
+      regla de redirección 301 en Cloudflare. Ahora sirve la misma página con código
+      200; la etiqueta canónica evita el contenido duplicado, pero la redirección es
+      lo limpio.
+- [x] Dar de alta el dominio en Google Search Console.
+- [ ] Importar el sitio en Bing Webmaster Tools desde Search Console.
+- [x] Comprobar que `/robots.txt` sirve el de `public/` con la línea del sitemap.
+- [x] Crear el Perfil de Empresa en Google y enlazarlo desde la web.
 
 ## Estructura
 

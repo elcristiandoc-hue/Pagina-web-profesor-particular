@@ -48,6 +48,13 @@ describe('App', () => {
     }
   });
 
+  it('should link the contact section to the Google business profile', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    const links = [...fixture.nativeElement.querySelectorAll('#contacto a')] as HTMLAnchorElement[];
+    expect(links.some((link) => link.getAttribute('href') === SITE.googleProfileUrl)).toBe(true);
+  });
+
   it('should keep the WhatsApp button pinned to the viewport', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();

@@ -83,6 +83,13 @@ export const SITE = {
     reviewCount: '7',
   },
 
+  /**
+   * Perfil de Empresa en Google. Es el destino del enlace corto que da Google al compartir
+   * (share.google/zpEnJRmmuC2FTeedz), sin la redirección intermedia. El identificador kgmid
+   * no cambia aunque se edite el nombre de la ficha. Va también en el sameAs de src/index.html.
+   */
+  googleProfileUrl: 'https://www.google.com/search?q=Cristian+Ortega&kgmid=/g/11zzp3p_75',
+
   nav: [
     { href: '#asignaturas', label: 'Asignaturas' },
     { href: '#metodo', label: 'Método' },
