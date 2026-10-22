@@ -1,0 +1,369 @@
+{
+ "title": "Clases particulares online de Matemáticas, Física y Química · Cristian Ortega",
+ "description": "Profesor particular online de Matemáticas, Física y Química para toda España: 4º de ESO, Bachillerato, PAU y universidad. Desde 15 €/h, entrevista inicial gratis.",
+ "robots": "",
+ "canonical": "https://cristianortega.com/",
+ "openGraph": {
+  "og:type": "website",
+  "og:locale": "es_ES",
+  "og:site_name": "Cristian Ortega",
+  "og:title": "Clases particulares online de Matemáticas, Física y Química · Cristian Ortega",
+  "og:description": "Por videollamada, para toda España: 4º de ESO, Bachillerato, Selectividad (PAU) y primeros cursos de universidad. Entrevista inicial gratuita.",
+  "og:url": "https://cristianortega.com/",
+  "og:image": "https://cristianortega.com/cristian-ortega.jpg",
+  "og:image:width": "1000",
+  "og:image:height": "1000",
+  "og:image:alt": "Cristian Ortega, profesor particular de Matemáticas, Física y Química"
+ },
+ "jsonLd": [
+  {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "WebSite",
+     "@id": "https://cristianortega.com/#web",
+     "url": "https://cristianortega.com/",
+     "name": "Cristian Ortega · Clases particulares",
+     "inLanguage": "es-ES",
+     "publisher": {
+      "@id": "https://cristianortega.com/#cristian"
+     }
+    },
+    {
+     "@type": "Person",
+     "@id": "https://cristianortega.com/#cristian",
+     "name": "Cristian Ortega Martínez",
+     "alternateName": "Cristian Ortega",
+     "url": "https://cristianortega.com/",
+     "image": "https://cristianortega.com/cristian-ortega.jpg",
+     "jobTitle": "Profesor particular de Matemáticas, Física y Química",
+     "description": "Licenciado en Químicas por la Universidad de Alicante, con nueve años de experiencia y más de cincuenta alumnos de clases particulares de ciencias.",
+     "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Universidad de Alicante"
+     },
+     "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "degree",
+      "name": "Licenciatura en Química",
+      "recognizedBy": {
+       "@type": "CollegeOrUniversity",
+       "name": "Universidad de Alicante"
+      }
+     },
+     "knowsAbout": [
+      "Matemáticas",
+      "Física",
+      "Química",
+      "Selectividad (PAU)"
+     ],
+     "knowsLanguage": "es",
+     "telephone": "+34618848828",
+     "email": "hola@cristianortega.com",
+     "sameAs": [
+      "https://buscatuprofesor.es/user-57163/",
+      "https://www.google.com/search?q=Cristian+Ortega&kgmid=/g/11zzp3p_75"
+     ]
+    },
+    {
+     "@type": "Service",
+     "@id": "https://cristianortega.com/#clases",
+     "name": "Clases particulares online de Matemáticas, Física y Química",
+     "serviceType": "Clases particulares",
+     "description": "Clases particulares online de Matemáticas, Física y Química, individuales o en grupos reducidos, desde 4º de ESO y Bachillerato hasta la Selectividad (PAU) y los primeros cursos de universidad.",
+     "url": "https://cristianortega.com/",
+     "provider": {
+      "@id": "https://cristianortega.com/#cristian"
+     },
+     "areaServed": {
+      "@type": "Country",
+      "name": "España"
+     },
+     "audience": {
+      "@type": "EducationalAudience",
+      "educationalRole": "student"
+     },
+     "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://cristianortega.com/#contacto",
+      "serviceLocation": {
+       "@type": "VirtualLocation",
+       "name": "Videollamada"
+      }
+     },
+     "offers": [
+      {
+       "@type": "Offer",
+       "name": "Clases individuales",
+       "description": "De 4º de ESO a 2º de Bachillerato",
+       "url": "https://cristianortega.com/#precios",
+       "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "15",
+        "priceCurrency": "EUR",
+        "unitCode": "HUR",
+        "unitText": "hora"
+       }
+      },
+      {
+       "@type": "Offer",
+       "name": "Grupo reducido",
+       "description": "Grupos de 2 a 5 alumnos del mismo curso y asignatura; precio por alumno",
+       "url": "https://cristianortega.com/#precios",
+       "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "minPrice": "10",
+        "maxPrice": "12",
+        "priceCurrency": "EUR",
+        "unitCode": "HUR",
+        "unitText": "hora y alumno"
+       }
+      },
+      {
+       "@type": "Offer",
+       "name": "Universidad",
+       "description": "Troncales de ciencias de los primeros cursos de carrera",
+       "url": "https://cristianortega.com/#precios",
+       "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "20",
+        "priceCurrency": "EUR",
+        "unitCode": "HUR",
+        "unitText": "hora"
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "h1": [
+  "Clases particulares online de Matemáticas, Física y Química"
+ ],
+ "h2": [
+  "Qué puedo ayudarte a aprobar",
+  "Un plan claro desde la primera clase",
+  "Clases online, sin complicaciones",
+  "Hola, soy Cristian",
+  "Familias y alumnos que ya lo han probado",
+  "Precios claros, sin sorpresas.",
+  "Lo que suele preguntarse antes de empezar",
+  "¿Hablamos?"
+ ],
+ "h3": [
+  "Matemáticas",
+  "Física",
+  "Química",
+  "Selectividad (PAU)",
+  "Universidad",
+  "Entrevista inicial",
+  "Plan a medida",
+  "Seguimiento",
+  "Lo imprescindible",
+  "Lo que ayuda, pero no hace falta",
+  "Clases individuales",
+  "Grupo reducido",
+  "Universidad",
+  "¿Cómo funcionan las clases particulares online?",
+  "¿Cuánto cuesta una clase particular?",
+  "¿Preparas la Selectividad (PAU, EBAU o EvAU)?",
+  "¿Das clases particulares a universitarios?",
+  "¿En qué consiste la entrevista inicial gratuita?",
+  "¿Puedo dar clase en grupo con mis compañeros?",
+  "¿Das clases presenciales?",
+  "¿Cómo se paga y qué pasa si no puedo ir a una clase?",
+  "¿Puedo preguntarte dudas entre clases?"
+ ],
+ "ids": [
+  "contenido",
+  "asignaturas",
+  "metodo",
+  "online",
+  "sobre-mi",
+  "opiniones",
+  "precios",
+  "preguntas",
+  "contacto",
+  "ng-state"
+ ],
+ "faq": [
+  {
+   "question": "¿Cómo funcionan las clases particulares online?",
+   "answer": "Por videollamada, con tu temario y al ritmo de tus clases. Solo necesitas una conexión a internet estable y un micrófono; la cámara ayuda, pero no es imprescindible. Así doy clase a alumnos de toda España."
+  },
+  {
+   "question": "¿Cuánto cuesta una clase particular?",
+   "answer": "Las clases individuales, de 4º de ESO a 2º de Bachillerato, cuestan 15 € la hora. En grupo reducido, de 2 a 5 alumnos, son 10–12 € por alumno y hora. Las de universidad, 20 € la hora. Sin matrícula ni permanencia."
+  },
+  {
+   "question": "¿Preparas la Selectividad (PAU, EBAU o EvAU)?",
+   "answer": "Sí. Según la comunidad se llama PAU, EBAU, EvAU o PEvAU, y cada una tiene su estilo de examen. Repasamos por bloques y hacemos, cronometrados, exámenes de convocatorias anteriores de tu comunidad: Matemáticas (también las de Ciencias Sociales), Física y Química."
+  },
+  {
+   "question": "¿Das clases particulares a universitarios?",
+   "answer": "Sí, y no es lo habitual: la mayoría de profesores particulares se quedan en Bachillerato. Preparo las troncales de Matemáticas, Física y Química de los primeros cursos de grados científico-técnicos, tanto exámenes como prácticas."
+  },
+  {
+   "question": "¿En qué consiste la entrevista inicial gratuita?",
+   "answer": "Antes de empezar hablamos para ver tu nivel real, qué se te atraganta y cuál es el objetivo: aprobar, subir nota o preparar la Selectividad. Es gratis y no te compromete a seguir."
+  },
+  {
+   "question": "¿Puedo dar clase en grupo con mis compañeros?",
+   "answer": "Sí, si sois del mismo curso y la misma asignatura. Los grupos son de 2 a 5 alumnos y cada uno paga entre 10 € y 12 € la hora, según cuántos seáis."
+  },
+  {
+   "question": "¿Das clases presenciales?",
+   "answer": "Las clases son online. Si vives cerca de Alicante y prefieres que sean presenciales, pregúntame por disponibilidad."
+  },
+  {
+   "question": "¿Cómo se paga y qué pasa si no puedo ir a una clase?",
+   "answer": "Por Bizum o transferencia. Si avisas con 24 horas de antelación, recuperamos la clase."
+  },
+  {
+   "question": "¿Puedo preguntarte dudas entre clases?",
+   "answer": "Sí, por WhatsApp. Y si la familia quiere, envío un breve informe de progreso cada mes."
+  }
+ ],
+ "images": [
+  {
+   "src": "cristian-ortega-1000.webp",
+   "srcset": "cristian-ortega-480.webp 480w, cristian-ortega-720.webp 720w, cristian-ortega-1000.webp 1000w",
+   "width": "1000",
+   "height": "1000",
+   "alt": "Cristian Ortega, profesor particular de Matemáticas, Física y Química"
+  }
+ ],
+ "links": [
+  "#asignaturas",
+  "#contacto",
+  "#contenido",
+  "#metodo",
+  "#online",
+  "#opiniones",
+  "#precios",
+  "/aviso-legal",
+  "/cookies",
+  "/privacidad",
+  "https://buscatuprofesor.es/user-57163/",
+  "https://wa.me/34618848828?text=Hola%20Cristian%2C%20me%20gustar%C3%ADa%20informarme%20sobre%20las%20clases%20particulares.",
+  "https://www.google.com/search?q=Cristian+Ortega&kgmid=/g/11zzp3p_75",
+  "mailto:hola@cristianortega.com",
+  "tel:+34618848828"
+ ],
+ "words": 1191,
+ "blocks": [
+  "Explicaciones simples para problemas complejos.",
+  "Refuerzo individual o en grupos reducidos, por videollamada, para alumnos de toda España. Desde 4º de ESO hasta la Selectividad y los primeros cursos de universidad.",
+  "Asignaturas",
+  "Refuerzo durante el curso, recuperaciones y preparación de exámenes. Siempre con tu temario y el ritmo de tus clases.",
+  "De 4º de ESO a 2º de Bachillerato (Ciencias y Ciencias Sociales). Álgebra, funciones, derivadas, integrales, probabilidad y estadística.",
+  "Cinemática, dinámica, energía, campos y ondas. Mucha práctica con problemas tipo examen, paso a paso.",
+  "Formulación, estequiometría, equilibrio, ácido-base, redox y orgánica. Con método para no perderse en los cálculos.",
+  "PAU, EBAU, EvAU o PEvAU: según la comunidad cambia el nombre. Repaso por bloques, exámenes cronometrados de convocatorias anteriores de tu comunidad y estrategia para el día de la prueba.",
+  "Muchas carreras arrancan con troncales de Matemáticas, Física y Química, y son las que más gente arrastra de primero. La mayoría de profesores particulares se quedan en Bachillerato: aquí seguimos.",
+  "Cómo trabajo",
+  "Nada de ir a remolque de los deberes: cada alumno tiene un objetivo, un ritmo y un seguimiento.",
+  "Gratuita y sin compromiso. Vemos el nivel real, qué se te atraganta y cuál es el objetivo: aprobar, subir nota o preparar la Selectividad.",
+  "Ajusto las clases a tu temario y al ritmo de tus clases. Ejercicios escogidos, resúmenes y trucos que funcionan en el examen.",
+  "Dudas por WhatsApp entre clases y, si la familia quiere, un breve informe de progreso cada mes.",
+  "Clases online",
+  "Doy clase por videollamada a alumnos de toda España. No hace falta montar nada especial: con lo que ya tienes en casa suele bastar.",
+  "Todo lo demás se adapta a cada alumno y lo concretamos en la entrevista inicial: horarios, material y forma de pago. Si vives cerca de Alicante y prefieres clases presenciales, pregúntame por disponibilidad.",
+  "Conexión a internet estable",
+  "Un micrófono",
+  "Cámara",
+  "Tus apuntes y ejercicios",
+  "Bizum o transferencia para pagar",
+  "Sobre mí",
+  "Soy Licenciado en Químicas por la Universidad de Alicante y llevo nueve años dando clases particulares de ciencias. Por mis clases han pasado más de cincuenta alumnos, desde 4º de ESO hasta primeros cursos de carrera.",
+  "Me gusta explicar con calma y sin dar nada por sabido: primero entender, luego practicar. Muchos alumnos llegan con miedo a la asignatura y terminan el curso con confianza (y con mejor nota).",
+  "«Quitar un par de puntos débiles es la diferencia entre suspender y aprobar.»",
+  "Formación",
+  "Licenciado en Químicas · Universidad de Alicante",
+  "Experiencia",
+  "9 años · más de 50 alumnos",
+  "Niveles",
+  "Desde 4º de ESO hasta universidad",
+  "Modalidad",
+  "Online, para toda España",
+  "Horario",
+  "Lunes a viernes, 16:00–21:00",
+  "Opiniones",
+  "5,0",
+  "★★★★★",
+  "Valoración media en buscatuprofesor.es 7 opiniones verificadas",
+  "★★★★★",
+  "«Puedo recomendar profesor Martínez Cristian, es maestro excelente,saber enseñar muy bien. Mi hija está muy contenta.»",
+  "Ruslana · Matemáticas · 2º de Bachillerato",
+  "abril de 2026 · buscatuprofesor.es",
+  "★★★★★",
+  "«Estamos muy contentos con Cristian, es muy buen profesor.»",
+  "Maria de las Nieves · Física · 2º de Bachillerato",
+  "diciembre de 2025 · buscatuprofesor.es",
+  "★★★★★",
+  "«Las clases han sido satisfactorias y he obtenido buenos resultados.»",
+  "Jeremy · Matemáticas · Estudios superiores",
+  "diciembre de 2025 · buscatuprofesor.es",
+  "★★★★★",
+  "«Muy amable y profesional. 100% recomendable.»",
+  "Mayte · Matemáticas · 1º de Bachillerato",
+  "marzo de 2025 · buscatuprofesor.es",
+  "★★★★★",
+  "«Fuaaaaa, Gracias a Christian y a la forma de que explica para que lo pillas y le des al coco he podido aprobar Física y no rendirme. Gracias»",
+  "Deborah Alese · Física · 2º de Bachillerato",
+  "febrero de 2025 · buscatuprofesor.es",
+  "★★★★★",
+  "«Desde que le da clase el profesor! Mi hijo aprendido más las matemáticas.»",
+  "MIRIAM · Matemáticas · 2º de Bachillerato",
+  "enero de 2025 · buscatuprofesor.es",
+  "★★★★★",
+  "«Mi niña está encantada con su fluidez a la hora de expresarse, la positividad q transmite en la resolución de problemas y el conocimiento técnico q traduce a un lenguaje totalmente comprensible»",
+  "Raquel Barbadilla · Matemáticas · 1º de Bachillerato",
+  "enero de 2025 · buscatuprofesor.es",
+  "Precios",
+  "Sin permanencia ni matrícula. Cancela con 24 h de antelación y recuperamos la clase.",
+  "15 €/ hora",
+  "Alumnos de 4º de ESO a 2º de Bachillerato.",
+  "Clase de 60 minutos",
+  "Por videollamada",
+  "Material y ejercicios incluidos",
+  "10–12 €/ hora y alumno",
+  "Compañeros de clase con el mismo curso y asignatura.",
+  "Grupos de 2 a 5 alumnos",
+  "Entre 10 € y 12 € por alumno, según cuántos seáis",
+  "Mismo curso y misma asignatura",
+  "20 €/ hora",
+  "Troncales de ciencias de los primeros cursos de carrera.",
+  "Clase de 60 minutos",
+  "Por videollamada",
+  "Preparación de exámenes y prácticas",
+  "Antes de empezar hacemos una entrevista inicial gratuita para valorar la situación del alumno, su nivel de partida y los objetivos del curso. Sin compromiso de continuar.",
+  "Preguntas frecuentes",
+  "Si tu duda no está aquí, escríbeme y te respondo el mismo día.",
+  "¿Cómo funcionan las clases particulares online?",
+  "Por videollamada, con tu temario y al ritmo de tus clases. Solo necesitas una conexión a internet estable y un micrófono; la cámara ayuda, pero no es imprescindible. Así doy clase a alumnos de toda España.",
+  "¿Cuánto cuesta una clase particular?",
+  "Las clases individuales, de 4º de ESO a 2º de Bachillerato, cuestan 15 € la hora. En grupo reducido, de 2 a 5 alumnos, son 10–12 € por alumno y hora. Las de universidad, 20 € la hora. Sin matrícula ni permanencia.",
+  "¿Preparas la Selectividad (PAU, EBAU o EvAU)?",
+  "Sí. Según la comunidad se llama PAU, EBAU, EvAU o PEvAU, y cada una tiene su estilo de examen. Repasamos por bloques y hacemos, cronometrados, exámenes de convocatorias anteriores de tu comunidad: Matemáticas (también las de Ciencias Sociales), Física y Química.",
+  "¿Das clases particulares a universitarios?",
+  "Sí, y no es lo habitual: la mayoría de profesores particulares se quedan en Bachillerato. Preparo las troncales de Matemáticas, Física y Química de los primeros cursos de grados científico-técnicos, tanto exámenes como prácticas.",
+  "¿En qué consiste la entrevista inicial gratuita?",
+  "Antes de empezar hablamos para ver tu nivel real, qué se te atraganta y cuál es el objetivo: aprobar, subir nota o preparar la Selectividad. Es gratis y no te compromete a seguir.",
+  "¿Puedo dar clase en grupo con mis compañeros?",
+  "Sí, si sois del mismo curso y la misma asignatura. Los grupos son de 2 a 5 alumnos y cada uno paga entre 10 € y 12 € la hora, según cuántos seáis.",
+  "¿Das clases presenciales?",
+  "Las clases son online. Si vives cerca de Alicante y prefieres que sean presenciales, pregúntame por disponibilidad.",
+  "¿Cómo se paga y qué pasa si no puedo ir a una clase?",
+  "Por Bizum o transferencia. Si avisas con 24 horas de antelación, recuperamos la clase.",
+  "¿Puedo preguntarte dudas entre clases?",
+  "Sí, por WhatsApp. Y si la familia quiere, envío un breve informe de progreso cada mes.",
+  "Contacto",
+  "Cuéntame el curso, la asignatura y qué necesitas. Te respondo el mismo día y concertamos la entrevista inicial gratuita.",
+  "o llámame al +34 618 84 88 28",
+  "Emailhola@cristianortega.com",
+  "DóndeOnline, para toda EspañaPresencial solo en la zona de Alicante",
+  "HorarioLunes a viernes, 16:00–21:00 · sábados por la mañana",
+  "Opiniones 5,0 ★ · 7 opiniones en buscatuprofesor.es Opina también en Google"
+ ]
+}
