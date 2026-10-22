@@ -1,0 +1,110 @@
+[
+ {
+  "id": "tartaglia-trayectorias-1537",
+  "files": [
+   {
+    "src": "tartaglia-trayectorias-1537-800.webp",
+    "width": 800,
+    "height": 633,
+    "bytes": 62186
+   },
+   {
+    "src": "tartaglia-trayectorias-1537-1034.webp",
+    "width": 1034,
+    "height": 818,
+    "bytes": 69134
+   }
+  ],
+  "alt": "Trayectorias de proyectiles dibujadas por Niccolò Tartaglia en «Nova scientia», 1537",
+  "obra": "Trayectorias de proyectiles de «Nova scientia» de Tartaglia (1537)",
+  "tituloOriginal": "Projectile trajectories from Tartaglia's Nova scientia",
+  "autor": "Niccolò Tartaglia",
+  "fecha": "1537",
+  "licencia": "dominio público",
+  "licenciaUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "creditoObligatorio": false,
+  "pagina": "https://commons.wikimedia.org/wiki/File:Projectile_trajectories_from_Tartaglia%27s_Nova_scientia.jpg",
+  "via": "Wikimedia Commons"
+ },
+ {
+  "id": "byrne-euclides-1847",
+  "files": [
+   {
+    "src": "byrne-euclides-1847-800.webp",
+    "width": 800,
+    "height": 388,
+    "bytes": 36626
+   },
+   {
+    "src": "byrne-euclides-1847-1237.webp",
+    "width": 1237,
+    "height": 600,
+    "bytes": 64070
+   }
+  ],
+  "alt": "El Euclides de Oliver Byrne abierto por una página de diagramas en rojo, amarillo y azul, 1847",
+  "obra": "«The First Six Books of the Elements of Euclid» de Oliver Byrne (1847)",
+  "tituloOriginal": "The First Six Books of the Elements of Euclid",
+  "autor": "Oliver Byrne",
+  "fecha": "1847",
+  "licencia": "dominio público",
+  "licenciaUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "creditoObligatorio": false,
+  "pagina": "https://commons.wikimedia.org/wiki/File:The_First_Six_Books_of_the_Elements_of_Euclid.jpg",
+  "via": "Wikimedia Commons"
+ },
+ {
+  "id": "lavoisier-lamina-gases-1789",
+  "files": [
+   {
+    "src": "lavoisier-lamina-gases-1789-800.webp",
+    "width": 800,
+    "height": 535,
+    "bytes": 29924
+   },
+   {
+    "src": "lavoisier-lamina-gases-1789-1600.webp",
+    "width": 1600,
+    "height": 1070,
+    "bytes": 124122
+   }
+  ],
+  "alt": "Lámina del «Tratado elemental de química» de Lavoisier con aparatos para medir gases, 1789",
+  "obra": "Lámina del «Traité élémentaire de chimie» de Lavoisier (1789)",
+  "tituloOriginal": "Traité élémentaire de chimie - présenté dans un ordre nouveau et d'après les découvertes modernes; avec figures (1789) (14594914840)",
+  "autor": "Lavoisier, Antoine Laurent, 1743-1794",
+  "fecha": "1789",
+  "licencia": "sin restricciones de copyright conocidas",
+  "licenciaUrl": "https://www.flickr.com/commons/usage/",
+  "creditoObligatorio": false,
+  "pagina": "https://commons.wikimedia.org/wiki/File:Trait%C3%A9_%C3%A9l%C3%A9mentaire_de_chimie_-_pr%C3%A9sent%C3%A9_dans_un_ordre_nouveau_et_d%27apr%C3%A8s_les_d%C3%A9couvertes_modernes;_avec_figures_(1789)_(14594914840).jpg",
+  "via": "Wikimedia Commons"
+ },
+ {
+  "id": "campus-universidad-alicante",
+  "files": [
+   {
+    "src": "campus-universidad-alicante-800.webp",
+    "width": 800,
+    "height": 600,
+    "bytes": 95874
+   },
+   {
+    "src": "campus-universidad-alicante-1600.webp",
+    "width": 1600,
+    "height": 1200,
+    "bytes": 226792
+   }
+  ],
+  "alt": "Un edificio del campus de la Universidad de Alicante, con césped y una gran escultura de una mano",
+  "obra": "Campus de la Universidad de Alicante (2005)",
+  "tituloOriginal": "Campus università di Alicante",
+  "autor": "User:Luca83",
+  "fecha": "2005-05-18",
+  "licencia": "CC BY 3.0",
+  "licenciaUrl": "https://creativecommons.org/licenses/by/3.0",
+  "creditoObligatorio": true,
+  "pagina": "https://commons.wikimedia.org/wiki/File:Campus_universit%C3%A0_di_Alicante.jpg",
+  "via": "Wikimedia Commons"
+ }
+]

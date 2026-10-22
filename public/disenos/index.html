@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Propuestas de diseño · Cristian Ortega</title>
+  <meta name="description" content="Tres prototipos de diseño para cristianortega.com. No es la web publicada.">
+  <meta property="og:title" content="Propuestas de diseño · Cristian Ortega">
+  <meta property="og:description" content="Tres prototipos para revisar. No es la web publicada.">
+  <meta property="og:image" content="https://cristianortega.com/cristian-ortega.jpg">
+  <style>
+    /* El laboratorio es una herramienta para comparar, no una propuesta: neutro a propósito,
+       para que no tiña lo que se mira dentro. */
+    :root {
+      --bg: #ececea;
+      --panel: #ffffff;
+      --ink: #141414;
+      --muted: #555555;
+      --step: #f3f3f1;
+      --accent: #1d4ed8;
+      --accent-ink: #ffffff;
+      --menu: 320px;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      color: var(--ink);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { margin: 0; height: 100%; }
+
+    body {
+      background: var(--bg);
+      display: grid;
+      grid-template-columns: var(--menu) 1fr;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    a { color: var(--accent); }
+
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+    .menu {
+      background: var(--panel);
+      height: 100vh;
+      overflow-y: auto;
+      padding: 28px 24px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .menu h1 { font-size: 24px; line-height: 1.15; margin: 0; letter-spacing: -0.01em; }
+
+    .menu > p { margin: 8px 0 0; color: var(--muted); font-size: 15px; }
+
+    .lista { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+    .propuesta {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 10px;
+      background: var(--step);
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .propuesta:hover { background: #e6e6e2; }
+
+    .propuesta[aria-current='true'] { background: var(--ink); color: #ffffff; }
+
+    .nombre { display: block; font-weight: 700; font-size: 17px; }
+
+    .idea { display: block; margin-top: 2px; font-size: 14px; opacity: 0.85; }
+
+    .grupo { display: grid; gap: 8px; }
+
+    .etiqueta { font-size: 14px; font-weight: 600; color: var(--muted); }
+
+    .botones { display: flex; gap: 6px; flex-wrap: wrap; }
+
+    button, select {
+      font: inherit;
+      font-size: 15px;
+      min-height: 40px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 0;
+      background: var(--step);
+      color: var(--ink);
+      cursor: pointer;
+    }
+
+    button[aria-pressed='true'] { background: var(--accent); color: var(--accent-ink); }
+
+    .abrir {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: var(--accent-ink);
+      font-weight: 600;
+      text-decoration: none;
+      justify-self: start;
+    }
+
+    .como h2 { font-size: 17px; margin: 0 0 8px; }
+
+    .como ol { margin: 0; padding-left: 20px; font-size: 15px; color: var(--muted); display: grid; gap: 6px; }
+
+    .notas { font-size: 14px; color: var(--muted); }
+
+    .notas h2 { font-size: 15px; color: var(--ink); margin: 0 0 6px; }
+
+    .notas ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+
+    .atajos { font-size: 13px; color: var(--muted); margin-top: auto; }
+
+    .visor {
+      height: 100vh;
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .estado { font-size: 14px; color: var(--muted); display: flex; gap: 24px; }
+
+    .pantallas { flex: 1; min-height: 0; display: flex; gap: 24px; justify-content: center; align-items: flex-start; }
+
+    .marco { position: relative; overflow: hidden; background: var(--panel); border-radius: 6px; flex: none; }
+
+    .marco[hidden] { display: none; }
+
+    .marco iframe { border: 0; display: block; transform-origin: 0 0; background: #ffffff; }
+
+    .rotulo { font-size: 13px; color: var(--muted); margin: 0 0 6px; }
+
+    /* En el móvil el visor no tiene sentido: la lista lleva directo a cada propuesta. */
+    @media (max-width: 900px) {
+      body { display: block; }
+      .menu { height: auto; padding: 24px 16px 40px; }
+      .visor, .solo-ordenador { display: none; }
+      .propuesta { padding: 18px 16px; }
+      .nombre { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+  <aside class="menu">
+    <div>
+      <h1>Propuestas de diseño para la web de Cristian</h1>
+      <p>Tres prototipos para elegir el nuevo diseño. No están en Google ni enlazados desde la web: solo los ve quien tiene este enlace.</p>
+    </div>
+
+    <nav aria-label="Propuestas">
+      <ol class="lista">
+        <li>
+          <a class="propuesta" href="1/" data-id="1">
+            <span class="nombre">1 · El lema</span>
+            <span class="idea">Tu lema como portada y un problema real resuelto paso a paso.</span>
+          </a>
+        </li>
+        <li>
+          <a class="propuesta" href="2/" data-id="2">
+            <span class="nombre">2 · Capítulos</span>
+            <span class="idea">Cada asignatura, un capítulo de color. Eliges curso y asignatura, y el mensaje de WhatsApp sale ya escrito.</span>
+          </a>
+        </li>
+        <li>
+          <a class="propuesta" href="3/" data-id="3">
+            <span class="nombre">3 · El informe</span>
+            <span class="idea">Maquetada como una publicación seria, pensada para las familias.</span>
+          </a>
+        </li>
+        <li>
+          <a class="propuesta" href="/" data-id="actual">
+            <span class="nombre">La web de ahora</span>
+            <span class="idea">Para comparar con lo que hay hoy.</span>
+          </a>
+        </li>
+      </ol>
+    </nav>
+
+    <div class="grupo solo-ordenador">
+      <span class="etiqueta" id="ancho-titulo">Verla como en</span>
+      <div class="botones" role="group" aria-labelledby="ancho-titulo">
+        <button type="button" data-ancho="movil">Móvil</button>
+        <button type="button" data-ancho="tablet">Tablet</button>
+        <button type="button" data-ancho="ordenador">Ordenador</button>
+      </div>
+    </div>
+
+    <div class="grupo solo-ordenador">
+      <label class="etiqueta" for="comparar">Comparar con</label>
+      <select id="comparar">
+        <option value="">Nada, verla sola</option>
+        <option value="1">1 · El lema</option>
+        <option value="2">2 · Capítulos</option>
+        <option value="3">3 · El informe</option>
+        <option value="actual">La web de ahora</option>
+      </select>
+    </div>
+
+    <a class="abrir solo-ordenador" id="abrir" href="1/" target="_blank" rel="noopener">Abrir a pantalla completa</a>
+
+    <section class="como">
+      <h2>Cómo revisarlas</h2>
+      <ol>
+        <li>Ábrelas en el móvil: es como las verán casi todos los alumnos y familias.</li>
+        <li>Recorre cada una hasta el final y prueba lo que se puede tocar.</li>
+        <li>Di cuál te representa mejor, qué te sobra y qué echas en falta.</li>
+      </ol>
+    </section>
+
+    <section class="notas" aria-labelledby="notas-titulo">
+      <h2 id="notas-titulo">Antes de opinar</h2>
+      <ul>
+        <li>Los textos son los de tu web. Los problemas resueltos son ejemplos para que los revises o los cambies por otros tuyos.</li>
+        <li>La 1 y la 3 dicen tu lema en otro orden, «Problemas complejos, explicaciones simples», para que la frase vaya de lo difícil a lo fácil. Si prefieres el original, se cambia.</li>
+        <li>Las imágenes antiguas (Faraday, Lavoisier, Euclides…) son de archivo, con su crédito. Con fotos tuyas quedaría mejor: tu forma de explicar, tus apuntes, tu mesa de trabajo.</li>
+        <li>Lo que se elige es el estilo. Los detalles (colores, palabras, el orden) se ajustan después.</li>
+      </ul>
+    </section>
+
+    <p class="atajos solo-ordenador">Teclas: 1, 2, 3 y 4 cambian de propuesta; M, T y O cambian el ancho.</p>
+  </aside>
+
+  <main class="visor" aria-label="Vista previa">
+    <div class="estado" aria-live="polite"><span id="estado"></span></div>
+    <div class="pantallas" id="pantallas">
+      <div class="marco" id="marco-a">
+        <iframe id="vista-a" title="Vista previa de la propuesta"></iframe>
+      </div>
+      <div class="marco" id="marco-b" hidden>
+        <iframe id="vista-b" title="Vista previa para comparar"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const ANCHOS = { movil: 390, tablet: 768, ordenador: 1440 };
+    const NOMBRES = { 1: '1 · El lema', 2: '2 · Capítulos', 3: '3 · El informe', actual: 'La web de ahora' };
+    const IDS = Object.keys(NOMBRES);
+    const estado = { id: '1', ancho: 'movil', comparar: '' };
+
+    const destino = (id) => (id === 'actual' ? '/' : `${id}/`);
+    const $ = (sel) => document.querySelector(sel);
+
+    function leerHash() {
+      const [id, ancho, otro] = location.hash.slice(1).split('/');
+      if (IDS.includes(id)) estado.id = id;
+      if (ANCHOS[ancho]) estado.ancho = ancho;
+      estado.comparar = IDS.includes(otro) && otro !== estado.id ? otro : '';
+    }
+
+    function escribirHash() {
+      const partes = [estado.id, estado.ancho, estado.comparar].filter(Boolean);
+      history.replaceState(null, '', '#' + partes.join('/'));
+    }
+
+    function cargar(iframe, id) {
+      const url = destino(id);
+      if (iframe.dataset.url !== url) {
+        iframe.dataset.url = url;
+        iframe.src = url;
+      }
+    }
+
+    function pintar() {
+      document.querySelectorAll('.propuesta').forEach((a) => {
+        a.setAttribute('aria-current', a.dataset.id === estado.id ? 'true' : 'false');
+      });
+      document.querySelectorAll('[data-ancho]').forEach((b) => {
+        b.setAttribute('aria-pressed', b.dataset.ancho === estado.ancho ? 'true' : 'false');
+      });
+      $('#comparar').value = estado.comparar;
+      $('#abrir').href = destino(estado.id);
+      cargar($('#vista-a'), estado.id);
+      $('#marco-b').hidden = !estado.comparar;
+      if (estado.comparar) cargar($('#vista-b'), estado.comparar);
+      escribirHash();
+      ajustar();
+    }
+
+    // Cada vista se pinta a su ancho real (390, 768 o 1440 px) y se reduce para que quepa.
+    function ajustar() {
+      const pantallas = $('#pantallas');
+      const marcos = [...pantallas.querySelectorAll('.marco:not([hidden])')];
+      if (!marcos.length || !pantallas.clientWidth) return;
+      const hueco = 24;
+      const anchoLibre = (pantallas.clientWidth - hueco * (marcos.length - 1)) / marcos.length;
+      const altoLibre = pantallas.clientHeight;
+      const ancho = ANCHOS[estado.ancho];
+      const escala = Math.min(1, anchoLibre / ancho);
+      for (const marco of marcos) {
+        const iframe = marco.querySelector('iframe');
+        iframe.style.width = ancho + 'px';
+        iframe.style.height = Math.round(altoLibre / escala) + 'px';
+        iframe.style.transform = `scale(${escala})`;
+        marco.style.width = Math.round(ancho * escala) + 'px';
+        marco.style.height = altoLibre + 'px';
+      }
+      const tamano = `${ancho} px${escala < 1 ? `, reducida al ${Math.round(escala * 100)} %` : ''}`;
+      $('#estado').textContent = estado.comparar
+        ? `${NOMBRES[estado.id]} frente a ${NOMBRES[estado.comparar]} · ${tamano}`
+        : `${NOMBRES[estado.id]} · ${tamano}`;
+    }
+
+    const enOrdenador = () => matchMedia('(min-width: 901px)').matches;
+
+    document.querySelectorAll('.propuesta').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        if (!enOrdenador()) return; // en el móvil, el enlace abre la propuesta
+        e.preventDefault();
+        estado.id = a.dataset.id;
+        if (estado.comparar === estado.id) estado.comparar = '';
+        pintar();
+      });
+    });
+
+    document.querySelectorAll('[data-ancho]').forEach((b) => {
+      b.addEventListener('click', () => {
+        estado.ancho = b.dataset.ancho;
+        pintar();
+      });
+    });
+
+    $('#comparar').addEventListener('change', (e) => {
+      estado.comparar = e.target.value === estado.id ? '' : e.target.value;
+      pintar();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.target.closest('select, input, textarea') || e.metaKey || e.ctrlKey || e.altKey) return;
+      const porTecla = { 1: '1', 2: '2', 3: '3', 4: 'actual' }[e.key];
+      const anchoPorTecla = { m: 'movil', t: 'tablet', o: 'ordenador' }[e.key.toLowerCase()];
+      if (porTecla) {
+        estado.id = porTecla;
+        if (estado.comparar === estado.id) estado.comparar = '';
+      } else if (anchoPorTecla) {
+        estado.ancho = anchoPorTecla;
+      } else {
+        return;
+      }
+      pintar();
+    });
+
+    addEventListener('resize', ajustar);
+    addEventListener('hashchange', () => { leerHash(); pintar(); });
+
+    leerHash();
+    if (enOrdenador()) {
+      pintar();
+    } else {
+      // En el móvil no se carga ninguna vista previa: solo la lista.
+      document.querySelectorAll('.propuesta').forEach((a) => a.setAttribute('aria-current', 'false'));
+    }
+    matchMedia('(min-width: 901px)').addEventListener('change', (e) => { if (e.matches) pintar(); });
+  </script>
+</body>
+</html>

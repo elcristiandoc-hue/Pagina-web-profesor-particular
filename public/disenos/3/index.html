@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Propuesta 3 · El informe — Cristian Ortega (prototipo)</title>
+  <meta name="description" content="Prototipo de diseño para cristianortega.com. No es la web publicada.">
+  <meta property="og:title" content="Propuesta de diseño 3 · Cristian Ortega">
+  <meta property="og:description" content="Prototipo para revisar. No es la web publicada.">
+  <meta property="og:image" content="https://cristianortega.com/cristian-ortega.jpg">
+  <meta name="theme-color" content="#1a2039">
+  <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__informe)document.documentElement.classList.add('sin-movimiento')},2500)</script>
+  <link rel="preload" href="../comun/fonts/stix-two-text-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../comun/fonts/stix-two-text.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="pagina.js" defer></script>
+</head>
+<body>
+<div class="prototipo" role="note">
+  Propuesta de diseño 3 de 3: no es la web publicada. <a href="../" target="_top">Ver las tres</a>
+</div>
+
+<header class="cabecera">
+  <a class="marca" href="#portada">Cristian Ortega</a>
+  <nav class="cabecera__nav" aria-label="Secciones">
+    <a href="#asignaturas">Asignaturas</a>
+    <a href="#metodo">Método</a>
+    <a href="#precios">Precios</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a class="boton boton--cabecera" href="https://wa.me/34618848828?text=Hola%20Cristian%2C%20me%20gustar%C3%ADa%20informarme%20sobre%20las%20clases%20particulares." target="_blank" rel="noopener"><span><span class="solo-ancho">Escríbeme por </span>WhatsApp</span></a>
+  <a class="menu" href="#indice" aria-controls="hoja" aria-expanded="false">Menú</a>
+</header>
+
+<div class="hoja" id="hoja" hidden>
+  <nav aria-label="Índice de la página">
+    <a href="#asignaturas">Asignaturas</a>
+    <a href="#metodo">Método</a>
+    <a href="#online">Clases online</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#precios">Precios</a>
+    <a href="#preguntas">Preguntas frecuentes</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <button class="hoja__cerrar" type="button">Cerrar</button>
+</div>
+
+<main>
+<section class="portada" id="portada" aria-labelledby="titulo">
+  <div class="portada__vista">
+    <div class="laminas">
+      <picture class="lamina is-on">
+        <source media="(max-aspect-ratio: 1/1)" srcset="img/portada-faraday-movil.webp" width="900" height="1200">
+        <img src="img/portada-faraday.webp" width="1600" height="1000" fetchpriority="high" decoding="async"
+             alt="Grabado de 1856: Michael Faraday, de pie junto a la mesa de experimentos, explica ante un anfiteatro lleno">
+      </picture>
+    </div>
+    <div class="velo" aria-hidden="true"></div>
+    <div class="rotulos">
+      <p class="rotulo is-on" style="--u:.70;--v:.47;--mu:.36;--mv:.36" data-lado="izq" data-lado-movil="der"><span>Michael Faraday explica un experimento en la Royal Institution, 1856</span></p>
+    </div>
+    <template id="mas-laminas">
+      <picture class="lamina">
+        <source media="(max-aspect-ratio: 1/1)" data-srcset="img/portada-planetario-movil.webp" width="900" height="1200">
+        <img data-src="img/portada-planetario.webp" width="1600" height="1000" decoding="async"
+             alt="Cuadro de hacia 1766: un filósofo explica un planetario mecánico a niños y adultos, a la luz de una lámpara">
+      </picture>
+      <picture class="lamina">
+        <source media="(max-aspect-ratio: 1/1)" data-srcset="img/portada-euclides-movil.webp" width="900" height="1200">
+        <img data-src="img/portada-euclides.webp" width="1600" height="1000" decoding="async"
+             alt="Detalle de La escuela de Atenas de Rafael: Euclides se inclina con un compás sobre una pizarra, rodeado de alumnos">
+      </picture>
+    </template>
+    <template id="mas-rotulos">
+      <p class="rotulo" style="--u:.66;--v:.36;--mu:.58;--mv:.27" data-lado="izq" data-lado-movil="izq"><span>Un filósofo explica el planetario, cuadro de Joseph Wright of Derby, hacia 1766</span></p>
+      <p class="rotulo" style="--u:.61;--v:.56;--mu:.6;--mv:.3" data-lado="izq" data-lado-movil="izq"><span>Euclides enseña geometría con el compás, en «La escuela de Atenas» de Rafael, 1511</span></p>
+    </template>
+  </div>
+
+  <div class="portada__texto">
+    <p class="portada__lema lineas"><span class="linea"><span data-linea style="--i:0">Problemas complejos,</span></span> <span class="linea"><span data-linea style="--i:1">explicaciones simples</span></span></p>
+    <h1 id="titulo" class="portada__titulo">Clases particulares online de Matemáticas, Física y Química</h1>
+  </div>
+
+  <ul class="fichas" aria-label="Más sobre Cristian">
+    <li>
+      <a class="ficha" href="#sobre-mi">
+        <span class="ficha__foto"><img src="../../cristian-ortega-480.webp" width="480" height="480" decoding="async" alt="Cristian Ortega, profesor particular de Matemáticas, Física y Química"></span>
+        <span class="ficha__barra"><span class="ficha__texto"><strong>Cristian Ortega</strong> Licenciado en Químicas<span class="solo-ancho"> por la Universidad de Alicante</span></span><svg class="ficha__flecha" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+      </a>
+    </li>
+    <li>
+      <a class="ficha ficha--cifra" href="#opiniones">
+        <span class="ficha__foto ficha__foto--cifra"><span class="cifra">5,0</span> <span class="cifra__de">de 5</span></span>
+        <span class="ficha__barra"><span class="ficha__texto"><strong>7 opiniones</strong> en buscatuprofesor.es</span><svg class="ficha__flecha" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h11M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="lema" id="lema" aria-labelledby="lema-titulo">
+  <div class="lema__cabeza rejilla">
+    <h2 class="titulo" id="lema-titulo" data-reveal>De complejo a simple</h2>
+    <p class="lema__texto" data-reveal style="--i:1">Refuerzo individual o en grupos reducidos, por videollamada, para alumnos de toda España. Desde 4º de ESO hasta la Selectividad y los primeros cursos de universidad.</p>
+  </div>
+  <div class="muestras" data-mira>
+    <figure class="muestra muestra--a">
+      <figcaption>Así llega un problema cuando nadie te lo ha explicado</figcaption>
+      <div class="muestra__caja"><p class="muestra__palabra muestra__palabra--cursiva" data-ajuste>complejo</p></div>
+    </figure>
+    <figure class="muestra muestra--b">
+      <figcaption>Y así se ve cuando por fin lo entiendes, paso a paso</figcaption>
+      <div class="muestra__caja"><p class="muestra__palabra" data-ajuste>simple</p></div>
+    </figure>
+  </div>
+</section>
+
+<section class="asignaturas seccion" id="asignaturas" aria-labelledby="asignaturas-titulo">
+  <h2 class="titulo asignaturas__titulo" id="asignaturas-titulo" data-reveal>Asignaturas que puedo ayudarte a&nbsp;aprobar</h2>
+  <div class="asignaturas__cuerpo rejilla">
+    <div class="asignaturas__lado">
+      <p class="entradilla" data-reveal>Refuerzo durante el curso, recuperaciones y preparación de exámenes. Siempre con tu temario y el ritmo de tus clases.</p>
+      <figure class="asignaturas__lamina" data-abre>
+        <img src="img/dalton-simbolos.webp" width="800" height="1000" loading="lazy" decoding="async"
+             alt="Lámina de John Dalton con símbolos de compuestos químicos dibujados con círculos, 1810">
+        <figcaption>Símbolos de compuestos de John Dalton, 1810</figcaption>
+      </figure>
+    </div>
+    <ul class="materias" data-lista>
+      <li class="materia">
+        <h3 class="materia__nombre">Matemáticas</h3>
+        <p class="materia__texto">De 4º de ESO a 2º de Bachillerato (Ciencias y Ciencias Sociales). Álgebra, funciones, derivadas, integrales, probabilidad y estadística.</p>
+        <p class="materia__niveles">4º ESO · Bachillerato</p>
+      </li>
+      <li class="materia">
+        <h3 class="materia__nombre">Física</h3>
+        <p class="materia__texto">Cinemática, dinámica, energía, campos y ondas. Mucha práctica con problemas tipo examen, paso a paso.</p>
+        <p class="materia__niveles">4º ESO · Bachillerato</p>
+      </li>
+      <li class="materia">
+        <h3 class="materia__nombre">Química</h3>
+        <p class="materia__texto">Formulación, estequiometría, equilibrio, ácido-base, redox y orgánica. Con método para no perderse en los cálculos.</p>
+        <p class="materia__niveles">4º ESO · Bachillerato</p>
+      </li>
+      <li class="materia materia--grupo">
+        <h3 class="materia__nombre">Selectividad (PAU)</h3>
+        <p class="materia__texto">PAU, EBAU, EvAU o PEvAU: según la comunidad cambia el nombre. Repaso por bloques, exámenes cronometrados de convocatorias anteriores de tu comunidad y estrategia para el día de la prueba.</p>
+        <p class="materia__niveles">2º Bachillerato · Intensivo</p>
+      </li>
+      <li class="materia">
+        <h3 class="materia__nombre">Universidad</h3>
+        <p class="materia__texto">Muchas carreras arrancan con troncales de Matemáticas, Física y Química, y son las que más gente arrastra de primero. La mayoría de profesores particulares se quedan en Bachillerato: aquí seguimos.</p>
+        <p class="materia__niveles">Primeros cursos · Grados científico-técnicos</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="metodo seccion" id="metodo" aria-labelledby="metodo-titulo">
+  <div class="rejilla metodo__cabeza">
+    <h2 class="titulo" id="metodo-titulo" data-reveal>Un plan claro desde la primera clase</h2>
+    <p class="entradilla metodo__entradilla" data-reveal style="--i:1">Nada de ir a remolque de los deberes: cada alumno tiene un objetivo, un ritmo y un seguimiento.</p>
+  </div>
+  <svg class="diagrama diagrama--ancho" data-mira viewBox="0 0 1380 300" aria-hidden="true" focusable="false"><circle cx="205.9" cy="86.6" r="6" fill="#956883"/><circle cx="95.6" cy="37.0" r="6" fill="#684e68"/><circle cx="400.6" cy="268.7" r="6" fill="#684e68"/><circle cx="73.4" cy="269.9" r="6" fill="#956883"/><circle cx="21.6" cy="222.2" r="6" fill="#956883"/><circle cx="74.4" cy="64.2" r="6" fill="#956883"/><circle cx="292.0" cy="196.8" r="6" fill="#956883"/><circle cx="395.1" cy="46.4" r="6" fill="#684e68"/><circle cx="261.2" cy="59.8" r="6" fill="#684e68"/><circle cx="311.2" cy="145.1" r="6" fill="#684e68"/><circle cx="324.5" cy="103.4" r="6" fill="#956883"/><circle cx="369.8" cy="127.8" r="6" fill="#684e68"/><circle cx="196.8" cy="192.1" r="6" fill="#956883"/><circle cx="70.6" cy="166.1" r="6" fill="#956883"/><circle cx="414.1" cy="112.1" r="6" fill="#684e68"/><circle cx="49.1" cy="240.3" r="6" fill="#684e68"/><circle cx="86.0" cy="231.3" r="6" fill="#684e68"/><circle cx="225.6" cy="168.2" r="6" fill="#684e68"/><circle cx="267.4" cy="157.5" r="6" fill="#684e68"/><circle cx="205.1" cy="136.7" r="6" fill="#956883"/><circle cx="403.8" cy="236.0" r="6" fill="#956883"/><circle cx="140.1" cy="65.4" r="6" fill="#956883"/><circle cx="154.6" cy="198.2" r="6" fill="#684e68"/><circle cx="214.9" cy="42.5" r="6" fill="#956883"/><circle cx="442.5" cy="86.7" r="6" fill="#956883"/><circle cx="30.1" cy="22.3" r="6" fill="#684e68"/><circle cx="24.9" cy="144.9" r="6" fill="#956883"/><circle cx="331.9" cy="195.3" r="6" fill="#684e68"/><circle cx="15.8" cy="65.6" r="6" fill="#684e68"/><circle cx="357.8" cy="178.7" r="6" fill="#956883"/><circle cx="116.9" cy="246.2" r="6" fill="#684e68"/><circle cx="179.0" cy="221.7" r="6" fill="#684e68"/><circle cx="335.4" cy="266.3" r="6" fill="#956883"/><circle cx="172.3" cy="156.0" r="6" fill="#956883"/><circle cx="151.8" cy="126.3" r="6" fill="#956883"/><circle cx="270.6" cy="27.7" r="6" fill="#684e68"/><circle cx="176.2" cy="260.3" r="6" fill="#684e68"/><circle cx="274.8" cy="241.3" r="6" fill="#684e68"/><circle cx="228.5" cy="209.8" r="6" fill="#684e68"/><circle cx="274.4" cy="280.1" r="6" fill="#956883"/><circle cx="422.8" cy="61.6" r="6" fill="#956883"/><circle cx="72.9" cy="100.6" r="6" fill="#684e68"/><circle cx="298.3" cy="260.5" r="6" fill="#956883"/><circle cx="398.4" cy="191.6" r="6" fill="#684e68"/><circle cx="472.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="487.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="502.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="517.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="532.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="547.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="562.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="577.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="592.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="607.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="622.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="637.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="652.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="667.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="682.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="697.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="712.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="727.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="742.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="757.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="772.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="787.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="802.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="817.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="832.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="847.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="862.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="877.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="892.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="907.0" cy="135.0" r="6" fill="#b9879c"/><circle cx="472.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="487.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="502.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="517.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="532.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="547.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="562.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="577.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="592.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="607.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="622.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="637.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="652.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="667.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="682.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="697.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="712.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="727.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="742.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="757.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="772.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="787.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="802.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="817.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="832.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="847.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="862.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="877.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="892.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="907.0" cy="150.0" r="6" fill="#b9879c"/><circle cx="472.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="487.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="502.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="517.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="532.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="547.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="562.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="577.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="592.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="607.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="622.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="637.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="652.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="667.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="682.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="697.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="712.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="727.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="742.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="757.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="772.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="787.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="802.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="817.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="832.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="847.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="862.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="877.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="892.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="907.0" cy="165.0" r="6" fill="#b9879c"/><circle cx="960.0" cy="60.0" r="6" fill="#f9a3c0"/><circle cx="1036.0" cy="60.0" r="6" fill="#f9a3c0"/><circle cx="1112.0" cy="60.0" r="6" fill="#f9a3c0"/><circle cx="1188.0" cy="60.0" r="6" fill="#f9a3c0"/><circle cx="1264.0" cy="60.0" r="6" fill="#f9a3c0"/><circle cx="1340.0" cy="60.0" r="6" fill="#f9a3c0"/><circle cx="960.0" cy="105.0" r="6" fill="#f9a3c0"/><circle cx="1036.0" cy="105.0" r="6" fill="#f9a3c0"/><circle cx="1112.0" cy="105.0" r="6" fill="#f9a3c0"/><circle cx="1188.0" cy="105.0" r="6" fill="#f9a3c0"/><circle cx="1264.0" cy="105.0" r="6" fill="#f9a3c0"/><circle cx="1340.0" cy="105.0" r="6" fill="#f9a3c0"/><circle cx="960.0" cy="150.0" r="6" fill="#f9a3c0"/><circle cx="1036.0" cy="150.0" r="6" fill="#f9a3c0"/><circle cx="1112.0" cy="150.0" r="6" fill="#f9a3c0"/><circle cx="1188.0" cy="150.0" r="6" fill="#f9a3c0"/><circle cx="1264.0" cy="150.0" r="6" fill="#f9a3c0"/><circle cx="1340.0" cy="150.0" r="6" fill="#f9a3c0"/><circle cx="960.0" cy="195.0" r="6" fill="#f9a3c0"/><circle cx="1036.0" cy="195.0" r="6" fill="#f9a3c0"/><circle cx="1112.0" cy="195.0" r="6" fill="#f9a3c0"/><circle cx="1188.0" cy="195.0" r="6" fill="#f9a3c0"/><circle cx="1264.0" cy="195.0" r="6" fill="#f9a3c0"/><circle cx="1340.0" cy="195.0" r="6" fill="#f9a3c0"/><circle cx="960.0" cy="240.0" r="6" fill="#f9a3c0"/><circle cx="1036.0" cy="240.0" r="6" fill="#f9a3c0"/><circle cx="1112.0" cy="240.0" r="6" fill="#f9a3c0"/><circle cx="1188.0" cy="240.0" r="6" fill="#f9a3c0"/><circle cx="1264.0" cy="240.0" r="6" fill="#f9a3c0"/><circle cx="1340.0" cy="240.0" r="6" fill="#f9a3c0"/></svg>
+  <ol class="etapas" data-lista>
+    <li class="etapa">
+      <svg class="zona" viewBox="0 0 120 150" aria-hidden="true" focusable="false"><circle cx="32.8" cy="130.4" r="5" fill="#684e68"/><circle cx="71.7" cy="132.2" r="5" fill="#684e68"/><circle cx="45.5" cy="15.1" r="5" fill="#956883"/><circle cx="109.2" cy="79.2" r="5" fill="#684e68"/><circle cx="55.0" cy="81.4" r="5" fill="#684e68"/><circle cx="89.1" cy="64.0" r="5" fill="#956883"/><circle cx="17.6" cy="108.4" r="5" fill="#684e68"/><circle cx="20.7" cy="68.9" r="5" fill="#684e68"/><circle cx="88.4" cy="19.3" r="5" fill="#684e68"/><circle cx="44.7" cy="49.9" r="5" fill="#956883"/><circle cx="61.3" cy="103.4" r="5" fill="#684e68"/><circle cx="106.8" cy="103.8" r="5" fill="#956883"/><circle cx="92.4" cy="140.0" r="5" fill="#956883"/><circle cx="99.9" cy="39.9" r="5" fill="#684e68"/><circle cx="10.8" cy="9.3" r="5" fill="#684e68"/><circle cx="8.8" cy="140.6" r="5" fill="#956883"/></svg>
+      <div>
+        <h3 class="etapa__nombre">Entrevista inicial</h3>
+        <p>Gratuita y sin compromiso. Vemos el nivel real, qué se te atraganta y cuál es el objetivo: aprobar, subir nota o preparar la Selectividad.</p>
+      </div>
+    </li>
+    <li class="etapa">
+      <svg class="zona" viewBox="0 0 120 150" aria-hidden="true" focusable="false"><circle cx="47.0" cy="16.0" r="5.5" fill="#b9879c"/><circle cx="60.0" cy="16.0" r="5.5" fill="#b9879c"/><circle cx="73.0" cy="16.0" r="5.5" fill="#b9879c"/><circle cx="47.0" cy="29.0" r="5.5" fill="#b9879c"/><circle cx="60.0" cy="29.0" r="5.5" fill="#b9879c"/><circle cx="73.0" cy="29.0" r="5.5" fill="#b9879c"/><circle cx="47.0" cy="42.0" r="5.5" fill="#b9879c"/><circle cx="60.0" cy="42.0" r="5.5" fill="#b9879c"/><circle cx="73.0" cy="42.0" r="5.5" fill="#b9879c"/><circle cx="47.0" cy="55.0" r="5.5" fill="#b9879c"/><circle cx="60.0" cy="55.0" r="5.5" fill="#b9879c"/><circle cx="73.0" cy="55.0" r="5.5" fill="#b9879c"/><circle cx="47.0" cy="68.0" r="5.5" fill="#b9879c"/><circle cx="60.0" cy="68.0" r="5.5" fill="#b9879c"/><circle cx="73.0" cy="68.0" r="5.5" fill="#b9879c"/><circle cx="47.0" cy="81.0" r="5.5" fill="#b9879c"/><circle cx="60.0" cy="81.0" r="5.5" fill="#b9879c"/><circle cx="73.0" cy="81.0" r="5.5" fill="#b9879c"/><circle cx="47.0" cy="94.0" r="5.5" fill="#b9879c"/><circle cx="60.0" cy="94.0" r="5.5" fill="#b9879c"/><circle cx="73.0" cy="94.0" r="5.5" fill="#b9879c"/><circle cx="47.0" cy="107.0" r="5.5" fill="#b9879c"/><circle cx="60.0" cy="107.0" r="5.5" fill="#b9879c"/><circle cx="73.0" cy="107.0" r="5.5" fill="#b9879c"/><circle cx="47.0" cy="120.0" r="5.5" fill="#b9879c"/><circle cx="60.0" cy="120.0" r="5.5" fill="#b9879c"/><circle cx="73.0" cy="120.0" r="5.5" fill="#b9879c"/><circle cx="47.0" cy="133.0" r="5.5" fill="#b9879c"/><circle cx="60.0" cy="133.0" r="5.5" fill="#b9879c"/><circle cx="73.0" cy="133.0" r="5.5" fill="#b9879c"/></svg>
+      <div>
+        <h3 class="etapa__nombre">Plan a medida</h3>
+        <p>Ajusto las clases a tu temario y al ritmo de tus clases. Ejercicios escogidos, resúmenes y trucos que funcionan en el examen.</p>
+      </div>
+    </li>
+    <li class="etapa">
+      <svg class="zona" viewBox="0 0 120 150" aria-hidden="true" focusable="false"><circle cx="25.0" cy="25.0" r="5.5" fill="#f9a3c0"/><circle cx="60.0" cy="25.0" r="5.5" fill="#f9a3c0"/><circle cx="95.0" cy="25.0" r="5.5" fill="#f9a3c0"/><circle cx="25.0" cy="58.0" r="5.5" fill="#f9a3c0"/><circle cx="60.0" cy="58.0" r="5.5" fill="#f9a3c0"/><circle cx="95.0" cy="58.0" r="5.5" fill="#f9a3c0"/><circle cx="25.0" cy="91.0" r="5.5" fill="#f9a3c0"/><circle cx="60.0" cy="91.0" r="5.5" fill="#f9a3c0"/><circle cx="95.0" cy="91.0" r="5.5" fill="#f9a3c0"/><circle cx="25.0" cy="124.0" r="5.5" fill="#f9a3c0"/><circle cx="60.0" cy="124.0" r="5.5" fill="#f9a3c0"/><circle cx="95.0" cy="124.0" r="5.5" fill="#f9a3c0"/></svg>
+      <div>
+        <h3 class="etapa__nombre">Seguimiento</h3>
+        <p>Dudas por WhatsApp entre clases y, si la familia quiere, un breve informe de progreso cada mes.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section class="ejemplos" id="ejemplos" aria-labelledby="ejemplos-titulo">
+  <div class="rejilla ejemplos__cabeza">
+    <h2 class="titulo" id="ejemplos-titulo" data-reveal>Tres problemas, paso a paso</h2>
+    <p class="entradilla ejemplos__entradilla" data-reveal style="--i:1">Un ejercicio de cada asignatura, resuelto como en clase: primero qué te piden, después cada paso con su porqué.</p>
+  </div>
+  <div class="ejemplos__tira">
+    <figure class="ejemplo-foto ejemplo-foto--vela" data-abre style="--o:1">
+      <div class="vela-marco">
+        <video class="vela" autoplay muted loop playsinline preload="metadata" poster="img/vela-poster.webp" width="720" height="720" aria-hidden="true">
+          <source src="img/vela.webm" type="video/webm">
+        </video>
+      </div>
+      <figcaption>Una combustión: la llama de una vela</figcaption>
+    </figure>
+    <figure class="ejemplo-foto" data-abre style="--i:1;--o:3">
+      <img src="img/tartaglia-trayectorias.webp" width="960" height="850" loading="lazy" decoding="async"
+           alt="Trayectorias de proyectiles dibujadas por Niccolò Tartaglia en 1537: curvas que salen de un punto y caen en vertical">
+      <figcaption>Trayectorias de proyectiles de Niccolò Tartaglia, «Nova scientia», 1537</figcaption>
+    </figure>
+    <figure class="ejemplo-foto" data-abre style="--i:2;--o:5">
+      <img src="img/euclides-compas.webp" width="960" height="653" loading="lazy" decoding="async"
+           alt="Detalle de La escuela de Atenas de Rafael: la mano de Euclides traza una figura con el compás sobre una pizarra">
+      <figcaption>Euclides traza una figura con el compás, «La escuela de Atenas», Rafael, 1511</figcaption>
+    </figure>
+  </div>
+  <ol class="problemas">
+    <li class="problema" data-reveal style="--o:2">
+      <h3 class="problema__enunciado"><strong>Química, 2º de Bachillerato.</strong> ¿Cuántos gramos de CO<sub>2</sub> se forman al quemar 32&nbsp;g de metano?</h3>
+      <ol class="pasos">
+        <li>Ajusta la reacción: CH<sub>4</sub> + 2&nbsp;O<sub>2</sub> <span class="flecha" role="img" aria-label="da"><svg viewBox="0 0 24 12" aria-hidden="true" focusable="false"><path d="M1 6h20M16 1.5 21.5 6 16 10.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg></span> CO<sub>2</sub> + 2&nbsp;H<sub>2</sub>O.</li>
+        <li>Pasa los gramos a moles: 32&nbsp;g ÷ 16&nbsp;g/mol = 2&nbsp;mol de CH<sub>4</sub>.</li>
+        <li>Lee la proporción: 1&nbsp;mol de CH<sub>4</sub> da 1&nbsp;mol de CO<sub>2</sub>, así que salen 2&nbsp;mol de CO<sub>2</sub>.</li>
+        <li>Vuelve a gramos: 2&nbsp;mol × 44&nbsp;g/mol = 88&nbsp;g de CO<sub>2</sub>.</li>
+      </ol>
+    </li>
+    <li class="problema" data-reveal style="--o:4;--i:1">
+      <h3 class="problema__enunciado"><strong>Física, 1º de Bachillerato.</strong> Lanzas una pelota hacia arriba a 20&nbsp;m/s. ¿Hasta qué altura sube? (g&nbsp;=&nbsp;9,8&nbsp;m/s²)</h3>
+      <ol class="pasos">
+        <li>Qué sabes: sale a v<sub>0</sub> = 20&nbsp;m/s y la gravedad le resta 9,8&nbsp;m/s cada segundo.</li>
+        <li>La clave: en el punto más alto la pelota se para un instante, v&nbsp;=&nbsp;0.</li>
+        <li>Usa la ecuación sin tiempo: v² = v<sub>0</sub>² − 2·g·h.</li>
+        <li>Despeja: h = v<sub>0</sub>² ÷ (2·g) = 400 ÷ 19,6 ≈ 20,4&nbsp;m.</li>
+      </ol>
+    </li>
+    <li class="problema" data-reveal style="--o:6;--i:2">
+      <h3 class="problema__enunciado"><strong>Matemáticas, 2º de Bachillerato.</strong> Deriva f(x) = x²·e<sup>x</sup>.</h3>
+      <ol class="pasos">
+        <li>Es un producto: u = x² y v = e<sup>x</sup>.</li>
+        <li>Regla del producto: (u·v)′ = u′·v + u·v′.</li>
+        <li>Deriva cada parte: u′ = 2x y v′ = e<sup>x</sup>.</li>
+        <li>Junta y saca factor común: f′(x) = 2x·e<sup>x</sup> + x²·e<sup>x</sup> = x·e<sup>x</sup>·(x&nbsp;+&nbsp;2).</li>
+      </ol>
+    </li>
+  </ol>
+</section>
+
+<section class="online seccion" id="online" aria-labelledby="online-titulo">
+  <div class="rejilla online__fila">
+    <h2 class="titulo online__titulo" id="online-titulo" data-reveal>Clases online, sin complicaciones</h2>
+  </div>
+  <div class="rejilla online__fila">
+    <dl class="datos" data-lista>
+      <div><dt>Dónde</dt><dd>Online, para toda España</dd></div>
+      <div><dt>Cómo</dt><dd>Por videollamada</dd></div>
+      <div><dt>Presencial</dt><dd>Solo en la zona de Alicante</dd></div>
+    </dl>
+    <p class="online__parrafo" data-reveal>Doy clase por videollamada a alumnos de toda España. No hace falta montar nada especial: con lo que ya tienes en casa suele bastar.</p>
+  </div>
+  <div class="rejilla online__fila online__fila--listas">
+        <div class="online__listas">
+      <div class="lista" data-reveal>
+        <h3 class="lista__titulo">Lo imprescindible</h3>
+        <ul>
+          <li>Conexión a internet estable</li>
+          <li>Un micrófono</li>
+        </ul>
+      </div>
+      <div class="lista" data-reveal style="--i:1">
+        <h3 class="lista__titulo">Lo que ayuda, pero no hace falta</h3>
+        <ul>
+          <li>Cámara</li>
+          <li>Tus apuntes y ejercicios</li>
+          <li>Bizum o transferencia para pagar</li>
+        </ul>
+      </div>
+      <p class="online__nota" data-reveal style="--i:2">Todo lo demás se adapta a cada alumno y lo concretamos en la entrevista inicial: horarios, material y forma de pago. Si vives cerca de Alicante y prefieres clases presenciales, pregúntame por disponibilidad.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sobre seccion" id="sobre-mi" aria-labelledby="sobre-titulo">
+  <div class="rejilla sobre__fila">
+    <figure class="sobre__retrato" data-abre>
+      <img src="../../cristian-ortega-1000.webp" width="1000" height="1000" loading="lazy" decoding="async"
+           alt="Cristian Ortega, profesor particular de Matemáticas, Física y Química">
+    </figure>
+    <div class="sobre__texto">
+      <h2 class="titulo" id="sobre-titulo" data-reveal>Hola, soy Cristian</h2>
+      <blockquote class="sobre__cita" data-reveal style="--i:1">
+        <p>«Quitar un par de puntos débiles es la diferencia entre suspender y aprobar.»</p>
+      </blockquote>
+      <p class="sobre__firma" data-reveal style="--i:2">Cristian Ortega · Licenciado en Químicas por la Universidad de Alicante</p>
+      <div class="sobre__columnas">
+        <div class="sobre__parrafos" data-reveal style="--i:3">
+          <p>Soy Licenciado en Químicas por la Universidad de Alicante y llevo nueve años dando clases particulares de ciencias. Por mis clases han pasado más de cincuenta alumnos, desde 4º de ESO hasta primeros cursos de carrera.</p>
+          <p>Me gusta explicar con calma y sin dar nada por sabido: primero entender, luego practicar. Muchos alumnos llegan con miedo a la asignatura y terminan el curso con confianza (y con mejor nota).</p>
+        </div>
+        <figure class="sobre__lugar" data-abre style="--i:2">
+          <img src="../comun/img/campus-universidad-alicante-800.webp" width="800" height="600" loading="lazy" decoding="async"
+               alt="Un edificio del campus de la Universidad de Alicante, con césped y una gran escultura de una mano">
+          <figcaption>Campus de la Universidad de Alicante</figcaption>
+        </figure>
+      </div>
+      <dl class="hechos" data-lista>
+        <div><dt>Formación</dt><dd>Licenciado en Químicas · Universidad de Alicante</dd></div>
+        <div><dt>Experiencia</dt><dd>9 años · más de 50 alumnos</dd></div>
+        <div><dt>Niveles</dt><dd>Desde 4º de ESO hasta universidad</dd></div>
+        <div><dt>Modalidad</dt><dd>Online, para toda España</dd></div>
+        <div><dt>Horario</dt><dd>Lunes a viernes, 16:00–21:00</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="opiniones" id="opiniones" aria-labelledby="opiniones-titulo">
+  <div class="opiniones__bloques">
+    <div class="opiniones__nombre">
+      <div class="opiniones__resumen">
+        <h2 class="titulo" id="opiniones-titulo" data-reveal>Opiniones de familias y alumnos</h2>
+        <p class="nota-media" data-reveal style="--i:1"><span class="nota-media__cifra">5,0</span> de 5 · valoración media en buscatuprofesor.es · 7 opiniones verificadas</p>
+      </div>
+      <p class="opiniones__autora"><strong>Raquel Barbadilla</strong> <span>Matemáticas · 1º de Bachillerato · enero de 2025 · buscatuprofesor.es</span></p>
+    </div>
+    <blockquote class="opiniones__cita">
+      <p data-reveal>«Mi niña está encantada con su fluidez a la hora de expresarse, la positividad q transmite en la resolución de problemas y el conocimiento técnico q traduce a un lenguaje totalmente comprensible»</p>
+    </blockquote>
+  </div>
+  <ul class="resenas" data-lista>
+    <li class="resena">
+      <blockquote><p>«Fuaaaaa, Gracias a Christian y a la forma de que explica para que lo pillas y le des al coco he podido aprobar Física y no rendirme. Gracias»</p></blockquote>
+      <p class="resena__autor"><strong>Deborah Alese</strong> · Física · 2º de Bachillerato · febrero de 2025 · buscatuprofesor.es</p>
+    </li>
+    <li class="resena">
+      <blockquote><p>«Puedo recomendar profesor Martínez Cristian, es maestro excelente,saber enseñar muy bien. Mi hija está muy contenta.»</p></blockquote>
+      <p class="resena__autor"><strong>Ruslana</strong> · Matemáticas · 2º de Bachillerato · abril de 2026 · buscatuprofesor.es</p>
+    </li>
+    <li class="resena">
+      <blockquote><p>«Estamos muy contentos con Cristian, es muy buen profesor.»</p></blockquote>
+      <p class="resena__autor"><strong>Maria de las Nieves</strong> · Física · 2º de Bachillerato · diciembre de 2025 · buscatuprofesor.es</p>
+    </li>
+    <li class="resena">
+      <blockquote><p>«Las clases han sido satisfactorias y he obtenido buenos resultados.»</p></blockquote>
+      <p class="resena__autor"><strong>Jeremy</strong> · Matemáticas · Estudios superiores · diciembre de 2025 · buscatuprofesor.es</p>
+    </li>
+    <li class="resena">
+      <blockquote><p>«Muy amable y profesional. 100% recomendable.»</p></blockquote>
+      <p class="resena__autor"><strong>Mayte</strong> · Matemáticas · 1º de Bachillerato · marzo de 2025 · buscatuprofesor.es</p>
+    </li>
+    <li class="resena">
+      <blockquote><p>«Desde que le da clase el profesor! Mi hijo aprendido más las matemáticas.»</p></blockquote>
+      <p class="resena__autor"><strong>MIRIAM</strong> · Matemáticas · 2º de Bachillerato · enero de 2025 · buscatuprofesor.es</p>
+    </li>
+  </ul>
+  <p class="opiniones__enlaces">
+    <a href="https://buscatuprofesor.es/user-57163/" target="_blank" rel="noopener">Ver todas en buscatuprofesor.es</a>
+    <a href="https://www.google.com/search?q=Cristian+Ortega&amp;kgmid=/g/11zzp3p_75" target="_blank" rel="noopener">Opina también en Google</a>
+  </p>
+</section>
+
+<section class="precios seccion" id="precios" aria-labelledby="precios-titulo">
+  <div class="tarifas">
+    <div class="tarifas__titulo">
+      <h2 class="titulo" id="precios-titulo" data-reveal>Precios claros, sin sorpresas</h2>
+      <p class="tarifas__sub" data-reveal style="--i:1">Sin permanencia ni matrícula. Cancela con 24&nbsp;h de antelación y recuperamos la clase.</p>
+    </div>
+    <ul class="tarifas__etiquetas" aria-hidden="true">
+      <li>Para quién</li>
+      <li>Formato</li>
+      <li>Detalle</li>
+      <li>Matrícula y permanencia</li>
+      <li>Si no puedes venir</li>
+      <li>Entrevista inicial</li>
+    </ul>
+    <article class="plan plan--habitual" aria-labelledby="plan-individual">
+      <header class="plan__cabeza">
+        <h3 class="plan__nombre" id="plan-individual">Clases individuales</h3>
+        <p class="plan__precio"><span class="plan__cifra">15&nbsp;€</span> <span class="plan__periodo">la hora · la más habitual</span></p>
+      </header>
+      <dl class="plan__filas">
+        <div><dt>Para quién</dt><dd>Alumnos de 4º de ESO a 2º de Bachillerato</dd></div>
+        <div><dt>Formato</dt><dd>Clase de 60 minutos, por videollamada</dd></div>
+        <div><dt>Detalle</dt><dd>Material y ejercicios incluidos</dd></div>
+        <div><dt>Matrícula y permanencia</dt><dd>No hay</dd></div>
+        <div><dt>Si no puedes venir</dt><dd>Avisa con 24&nbsp;h y recuperamos la clase</dd></div>
+        <div><dt>Entrevista inicial</dt><dd>Gratuita, sin compromiso</dd></div>
+      </dl>
+      <p class="plan__accion"><a class="boton boton--plan" href="https://wa.me/34618848828?text=Hola%20Cristian%2C%20me%20gustar%C3%ADa%20informarme%20sobre%20las%20clases%20particulares.%20Me%20interesan%20las%20clases%20individuales." target="_blank" rel="noopener">Escríbeme por WhatsApp</a></p>
+    </article>
+    <article class="plan" aria-labelledby="plan-grupo">
+      <header class="plan__cabeza">
+        <h3 class="plan__nombre" id="plan-grupo">Grupo reducido</h3>
+        <p class="plan__precio"><span class="plan__cifra">10–12&nbsp;€</span> <span class="plan__periodo">la hora y alumno</span></p>
+      </header>
+      <dl class="plan__filas">
+        <div><dt>Para quién</dt><dd>Compañeros de clase con el mismo curso y asignatura</dd></div>
+        <div><dt>Formato</dt><dd>Grupos de 2 a 5 alumnos, mismo curso y misma asignatura</dd></div>
+        <div><dt>Detalle</dt><dd>Entre 10&nbsp;€ y 12&nbsp;€ por alumno, según cuántos seáis</dd></div>
+        <div><dt>Matrícula y permanencia</dt><dd>No hay</dd></div>
+        <div><dt>Si no puedes venir</dt><dd>Avisa con 24&nbsp;h y recuperamos la clase</dd></div>
+        <div><dt>Entrevista inicial</dt><dd>Gratuita, sin compromiso</dd></div>
+      </dl>
+      <p class="plan__accion"><a class="boton boton--plan" href="https://wa.me/34618848828?text=Hola%20Cristian%2C%20me%20gustar%C3%ADa%20informarme%20sobre%20las%20clases%20particulares.%20Me%20interesan%20las%20clases%20en%20grupo%20reducido." target="_blank" rel="noopener">Escríbeme por WhatsApp</a></p>
+    </article>
+    <article class="plan" aria-labelledby="plan-universidad">
+      <header class="plan__cabeza">
+        <h3 class="plan__nombre" id="plan-universidad">Universidad</h3>
+        <p class="plan__precio"><span class="plan__cifra">20&nbsp;€</span> <span class="plan__periodo">la hora</span></p>
+      </header>
+      <dl class="plan__filas">
+        <div><dt>Para quién</dt><dd>Troncales de ciencias de los primeros cursos de carrera</dd></div>
+        <div><dt>Formato</dt><dd>Clase de 60 minutos, por videollamada</dd></div>
+        <div><dt>Detalle</dt><dd>Preparación de exámenes y prácticas</dd></div>
+        <div><dt>Matrícula y permanencia</dt><dd>No hay</dd></div>
+        <div><dt>Si no puedes venir</dt><dd>Avisa con 24&nbsp;h y recuperamos la clase</dd></div>
+        <div><dt>Entrevista inicial</dt><dd>Gratuita, sin compromiso</dd></div>
+      </dl>
+      <p class="plan__accion"><a class="boton boton--plan" href="https://wa.me/34618848828?text=Hola%20Cristian%2C%20me%20gustar%C3%ADa%20informarme%20sobre%20las%20clases%20particulares.%20Me%20interesan%20las%20clases%20de%20universidad." target="_blank" rel="noopener">Escríbeme por WhatsApp</a></p>
+    </article>
+  </div>
+  <p class="tarifas__nota" data-reveal>Antes de empezar hacemos una entrevista inicial gratuita para valorar la situación del alumno, su nivel de partida y los objetivos del curso. Sin compromiso de continuar.</p>
+
+  <form class="calcula" id="calcula" aria-labelledby="calcula-titulo" action="#calcula">
+    <div class="calcula__lado">
+      <h3 class="calcula__titulo" id="calcula-titulo" data-reveal>Calcula tu mes</h3>
+      <p class="calcula__ayuda" data-reveal style="--i:1">Elige el tipo de clase y cuántas a la semana. La cuenta es de un mes de cuatro semanas, con clases de una hora.</p>
+    </div>
+    <div class="calcula__mandos">
+      <fieldset class="selector">
+        <legend>Tipo de clase</legend>
+        <label class="opcion"><input type="radio" name="tipo" value="ind" checked><span>Individual, de 4º de ESO a 2º de Bachillerato · 15&nbsp;€ la hora</span></label>
+        <label class="opcion"><input type="radio" name="tipo" value="uni"><span>Universidad · 20&nbsp;€ la hora</span></label>
+      </fieldset>
+      <fieldset class="selector selector--semana">
+        <legend>Clases a la semana</legend>
+        <label class="opcion"><input type="radio" name="semana" value="1"><span>1</span></label>
+        <label class="opcion"><input type="radio" name="semana" value="2" checked><span>2</span></label>
+        <label class="opcion"><input type="radio" name="semana" value="3"><span>3</span></label>
+      </fieldset>
+      <div class="calcula__total">
+        <p class="total" data-r="ind-1">4 clases al mes: 60&nbsp;€</p>
+        <p class="total" data-r="ind-2">8 clases al mes: 120&nbsp;€</p>
+        <p class="total" data-r="ind-3">12 clases al mes: 180&nbsp;€</p>
+        <p class="total" data-r="uni-1">4 clases al mes: 80&nbsp;€</p>
+        <p class="total" data-r="uni-2">8 clases al mes: 160&nbsp;€</p>
+        <p class="total" data-r="uni-3">12 clases al mes: 240&nbsp;€</p>
+        <p class="sr-only" aria-live="polite" data-anuncio></p>
+      </div>
+      <p class="calcula__grupo">En grupo reducido, de 2 a 5 alumnos, son 10–12&nbsp;€ por alumno y hora, según cuántos seáis.</p>
+      <p class="calcula__accion"><a class="boton" data-whatsapp href="https://wa.me/34618848828?text=Hola%20Cristian%2C%20me%20gustar%C3%ADa%20informarme%20sobre%20las%20clases%20particulares." target="_blank" rel="noopener">Escríbeme por WhatsApp</a></p>
+    </div>
+  </form>
+</section>
+
+<section class="preguntas" id="preguntas" aria-labelledby="preguntas-titulo">
+  <div class="preguntas__cabeza">
+    <p class="preguntas__entradilla">Si tu duda no está aquí, escríbeme y te respondo el mismo día.</p>
+    <h2 class="preguntas__titulo" id="preguntas-titulo"><span>Preguntas</span> <span>frecuentes</span></h2>
+  </div>
+  <div class="banda">
+    <h3 class="banda__pregunta" data-reveal>¿Cómo funcionan las clases particulares online?</h3>
+    <p class="banda__respuesta" data-reveal style="--i:1">Por videollamada, con tu temario y al ritmo de tus clases. Solo necesitas una conexión a internet estable y un micrófono; la cámara ayuda, pero no es imprescindible. Así doy clase a alumnos de toda España.</p>
+  </div>
+  <div class="banda">
+    <h3 class="banda__pregunta" data-reveal>¿Cuánto cuesta una clase particular?</h3>
+    <p class="banda__respuesta" data-reveal style="--i:1">Las clases individuales, de 4º de ESO a 2º de Bachillerato, cuestan 15&nbsp;€ la hora. En grupo reducido, de 2 a 5 alumnos, son 10–12&nbsp;€ por alumno y hora. Las de universidad, 20&nbsp;€ la hora. Sin matrícula ni permanencia.</p>
+  </div>
+  <div class="banda">
+    <h3 class="banda__pregunta" data-reveal>¿Preparas la Selectividad (PAU, EBAU o EvAU)?</h3>
+    <p class="banda__respuesta" data-reveal style="--i:1">Sí. Según la comunidad se llama PAU, EBAU, EvAU o PEvAU, y cada una tiene su estilo de examen. Repasamos por bloques y hacemos, cronometrados, exámenes de convocatorias anteriores de tu comunidad: Matemáticas (también las de Ciencias Sociales), Física y Química.</p>
+  </div>
+  <div class="banda">
+    <h3 class="banda__pregunta" data-reveal>¿Das clases particulares a universitarios?</h3>
+    <p class="banda__respuesta" data-reveal style="--i:1">Sí, y no es lo habitual: la mayoría de profesores particulares se quedan en Bachillerato. Preparo las troncales de Matemáticas, Física y Química de los primeros cursos de grados científico-técnicos, tanto exámenes como prácticas.</p>
+  </div>
+  <div class="banda">
+    <h3 class="banda__pregunta" data-reveal>¿En qué consiste la entrevista inicial gratuita?</h3>
+    <p class="banda__respuesta" data-reveal style="--i:1">Antes de empezar hablamos para ver tu nivel real, qué se te atraganta y cuál es el objetivo: aprobar, subir nota o preparar la Selectividad. Es gratis y no te compromete a seguir.</p>
+  </div>
+  <div class="banda">
+    <h3 class="banda__pregunta" data-reveal>¿Puedo dar clase en grupo con mis compañeros?</h3>
+    <p class="banda__respuesta" data-reveal style="--i:1">Sí, si sois del mismo curso y la misma asignatura. Los grupos son de 2 a 5 alumnos y cada uno paga entre 10&nbsp;€ y 12&nbsp;€ la hora, según cuántos seáis.</p>
+  </div>
+  <div class="banda">
+    <h3 class="banda__pregunta" data-reveal>¿Das clases presenciales?</h3>
+    <p class="banda__respuesta" data-reveal style="--i:1">Las clases son online. Si vives cerca de Alicante y prefieres que sean presenciales, pregúntame por disponibilidad.</p>
+  </div>
+  <div class="banda">
+    <h3 class="banda__pregunta" data-reveal>¿Cómo se paga y qué pasa si no puedo ir a una clase?</h3>
+    <p class="banda__respuesta" data-reveal style="--i:1">Por Bizum o transferencia. Si avisas con 24 horas de antelación, recuperamos la clase.</p>
+  </div>
+  <div class="banda">
+    <h3 class="banda__pregunta" data-reveal>¿Puedo preguntarte dudas entre clases?</h3>
+    <p class="banda__respuesta" data-reveal style="--i:1">Sí, por WhatsApp. Y si la familia quiere, envío un breve informe de progreso cada mes.</p>
+  </div>
+</section>
+
+<section class="contacto" id="contacto" aria-labelledby="contacto-titulo">
+  <div class="rejilla contacto__fila">
+    <div class="contacto__frase">
+      <h2 class="titulo" id="contacto-titulo" data-reveal>¿Hablamos?</h2>
+      <p class="contacto__texto" data-reveal style="--i:1">Cuéntame el curso, la asignatura y qué necesitas. Te respondo el mismo día y concertamos la entrevista inicial gratuita.</p>
+      <p class="contacto__accion" data-reveal style="--i:2"><a class="boton" href="https://wa.me/34618848828?text=Hola%20Cristian%2C%20me%20gustar%C3%ADa%20informarme%20sobre%20las%20clases%20particulares." target="_blank" rel="noopener">Escríbeme por WhatsApp</a> <span class="contacto__llamar">o llámame al <a href="tel:+34618848828">+34 618 84 88 28</a></span></p>
+    </div>
+    <figure class="contacto__retrato" data-abre>
+      <img src="../../cristian-ortega-480.webp" width="480" height="480" loading="lazy" decoding="async"
+           alt="Cristian Ortega, profesor particular de Matemáticas, Física y Química">
+    </figure>
+    <div class="contacto__datos" data-reveal style="--i:2">
+      <p class="contacto__pregunta">¿Prefieres el correo?</p>
+      <p class="contacto__enlaces"><a href="mailto:hola@cristianortega.com">hola@cristianortega.com</a> <a href="https://www.google.com/search?q=Cristian+Ortega&amp;kgmid=/g/11zzp3p_75" target="_blank" rel="noopener">Opina también en Google</a></p>
+      <p class="contacto__lugar">Online, para toda España. Presencial solo en la zona de Alicante. Lunes a viernes, 16:00–21:00 · sábados por la mañana.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <p class="pie__marca" data-ajuste-ancho>Cristian Ortega</p>
+  <div class="rejilla pie__fila">
+    <ul class="pie__vias">
+      <li><a href="https://wa.me/34618848828?text=Hola%20Cristian%2C%20me%20gustar%C3%ADa%20informarme%20sobre%20las%20clases%20particulares." target="_blank" rel="noopener">WhatsApp</a></li>
+      <li><a href="tel:+34618848828">+34 618 84 88 28</a></li>
+      <li><a href="mailto:hola@cristianortega.com">hola@cristianortega.com</a></li>
+    </ul>
+    <nav class="pie__indice" id="indice" aria-label="Índice">
+      <ul>
+        <li><a href="#asignaturas">Asignaturas</a></li>
+        <li><a href="#metodo">Método</a></li>
+        <li><a href="#online">Clases online</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+      </ul>
+      <ul>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#preguntas">Preguntas frecuentes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <ul>
+        <li><a href="/aviso-legal">Aviso legal</a></li>
+        <li><a href="/privacidad">Privacidad</a></li>
+        <li><a href="/cookies">Cookies</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="pie__creditos">
+    <p>Imágenes (reproducidas a dos tintas, salvo las fotografías):</p>
+    <ul>
+      <li>Michael Faraday en la Royal Institution, grabado según Alexander Blaikley (1856), <a href="https://creativecommons.org/publicdomain/mark/1.0/">dominio público</a>, vía <a href="https://commons.wikimedia.org/wiki/File:Michael_Faraday_lecturing_at_the_Royal_Institution;_Prince_A_Wellcome_V0013854.jpg">Wikimedia Commons</a>.</li>
+      <li>«Un filósofo explica el planetario», Joseph Wright of Derby (hacia 1766), dominio público, vía <a href="https://commons.wikimedia.org/wiki/File:Wright_of_Derby,_The_Orrery.jpg">Wikimedia Commons</a>.</li>
+      <li>«La escuela de Atenas», Rafael (1509–1511), dominio público, vía Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg">fresco</a> y <a href="https://commons.wikimedia.org/wiki/File:Raffael_064.jpg">detalle de Euclides</a>.</li>
+      <li>Lámina 6 de símbolos de compuestos, John Dalton (1810), dominio público, vía <a href="https://commons.wikimedia.org/wiki/File:Plate_6-_Symbols_of_compound_elements_-_DPLA_-_a70f5482240e2e0f5106e89ff15ba215.jpg">Wikimedia Commons</a>.</li>
+      <li>Trayectorias de proyectiles de «Nova scientia», Niccolò Tartaglia (1537), dominio público, vía <a href="https://commons.wikimedia.org/wiki/File:Projectile_trajectories_from_Tartaglia%27s_Nova_scientia.jpg">Wikimedia Commons</a>.</li>
+      <li>Vídeo «Pink candle burning», Jahobr (2021), <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.es">CC0</a>, vía <a href="https://commons.wikimedia.org/wiki/File:Pink_candle_burning.webm">Wikimedia Commons</a>.</li>
+      <li>Campus de la Universidad de Alicante, Luca83 (2005), <a href="https://creativecommons.org/licenses/by/3.0/deed.es">CC BY 3.0</a>, vía <a href="https://commons.wikimedia.org/wiki/File:Campus_universit%C3%A0_di_Alicante.jpg">Wikimedia Commons</a>.</li>
+    </ul>
+  </div>
+  <div class="pie__final">
+    <p>© 2026 Cristian Ortega · Profesor particular de Matemáticas, Física y Química</p>
+    <a href="#portada">Volver arriba</a>
+  </div>
+</footer>
+
+<a class="flotante" href="https://wa.me/34618848828?text=Hola%20Cristian%2C%20me%20gustar%C3%ADa%20informarme%20sobre%20las%20clases%20particulares." target="_blank" rel="noopener">WhatsApp</a>
+</body>
+</html>

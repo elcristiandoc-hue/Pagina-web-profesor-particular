@@ -1,0 +1,6 @@
+# Cabeceras de Cloudflare Pages.
+# Las propuestas de diseño de /disenos/ son prototipos para revisar con Cristian, no la web:
+# no deben salir en Google. Cada página lleva además su <meta name="robots" content="noindex">.
+# No se bloquean en robots.txt a propósito: si Google no puede entrar, no ve el noindex.
+/disenos/*
+  X-Robots-Tag: noindex
